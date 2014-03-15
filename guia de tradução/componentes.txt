@@ -1,0 +1,5 @@
+----
+Exemplo:
+original em inglês => String nova em português
+
+----
