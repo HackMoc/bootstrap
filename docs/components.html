@@ -68,10 +68,10 @@ lead: "Over a dozen reusable components built to provide iconography, dropdowns,
 <div class="bs-docs-section">
   <h1 id="dropdowns" class="page-header">Dropdowns</h1>
 
-  <p class="lead">Toggleable, contextual menu for displaying lists of links. Made interactive with the <a href="../javascript/#dropdowns">dropdown JavaScript plugin</a>.</p>
+  <p class="lead">Menu de contexto variável para exibir listas de links. Feito interativo graças ao <a href="../javascript/#dropdowns">dropdown JavaScript plugin</a>.</p>
 
-  <h3 id="dropdowns-example">Example</h3>
-  <p>Wrap the dropdown's trigger and the dropdown menu within <code>.dropdown</code>, or another element that declares <code>position: relative;</code>. Then add the menu's HTML.</p>
+  <h3 id="dropdowns-example">Exemplos</h3>
+  <p>Envolva gatilho do dropdown e o menu dropdown com <code>.dropdown</code>, ou outro elemento que declara <code>position: relative;</code>. Então adicione ao menu HTML.</p>
   <div class="bs-example">
     <div class="dropdown clearfix">
       <button class="btn dropdown-toggle sr-only" type="button" id="dropdownMenu1" data-toggle="dropdown">
@@ -79,11 +79,11 @@ lead: "Over a dozen reusable components built to provide iconography, dropdowns,
         <span class="caret"></span>
       </button>
       <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
-        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
-        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Ação</a></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Outra ação</a></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Algo diferente aqui</a></li>
         <li role="presentation" class="divider"></li>
-        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Link separado</a></li>
       </ul>
     </div>
   </div><!-- /example -->
@@ -94,24 +94,24 @@ lead: "Over a dozen reusable components built to provide iconography, dropdowns,
     <span class="caret"></span>
   </button>
   <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
-    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
-    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Ação</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Outra ação</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Algo diferente aqui</a></li>
     <li role="presentation" class="divider"></li>
-    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Link separado</a></li>
   </ul>
 </div>
 {% endhighlight %}
 
-  <h3 id="dropdowns-alignment">Alignment</h3>
-  <p>By default, a dropdown menu is automatically positioned 100% from the top and along the left side of its parent. Add <code>.dropdown-menu-right</code> to a <code>.dropdown-menu</code> to right align the dropdown menu.</p>
+  <h3 id="dropdowns-alignment">Alinhamento</h3>
+  <p>Por padrão, o menu dropdown é automaticamente posicionado 100% a partir do topo juntamente a esquerda de seu antecessor. Adicione <code>.dropdown-menu-right</code> a <code>.dropdown-menu</code> para alinhar a direita o menu dropdown.</p>
   <div class="bs-callout bs-callout-warning">
-    <h4>May require additional positioning</h4>
-    <p>Dropdowns are automatically positioned via CSS within the normal flow of the document. This means dropdowns may be cropped by parents with certain <code>overflow</code> properties or appear out of bounds of the viewport. Address these issues on your own as they arise.</p>
+    <h4>Posicionamento adicional pode ser requerido</h4>
+    <p>Menus dropdown são posicionados automaticamente via CSS com o fluxo normal do documento. Isso significa que os menus dropdowns podem ser cortados pelos seus antecessores através da propriedade <code>overflow</code> ou exibidas fora dos limites. Cuide destes ajustes na medida que forem aparecendo.</p>
   </div>
   <div class="bs-callout bs-callout-warning">
-    <h4>Deprecated <code>.pull-right</code> alignment</h4>
-    <p>As of v3.1.0, we've deprecated <code>.pull-right</code> on dropdown menus. To right-align a menu, use <code>.dropdown-menu-right</code>. Right-aligned nav components in the navbar use a mixin version of this class to automatically align the menu. To override it, use <code>.dropdown-menu-left</code>.</p>
+    <h4>Depreciado <code>.pull-right</code> Alinhamento</h4>
+    <p>Desde a versão v3.1.0, nós depreciamos os menus com <code>.pull-right</code>. Para alinhar um menu a direita, use <code>.dropdown-menu-right</code>. Componentes nav alinhados a direita na  navbar use uma mistura das versões dessa classe para alinhar. Para sobrescreve-la, use <code>.dropdown-menu-left</code>.</p>
   </div>
 {% highlight html %}
 <ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="dLabel">
