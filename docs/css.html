@@ -328,17 +328,19 @@ lead: "Global CSS settings, fundamental HTML elements styled and enhanced with e
 {% endhighlight %}
 
   <h3 id="grid-responsive-resets">Responsive column resets</h3>
+  <h3 id="grid-responsive-resets">Redefinição de responsividade de colunas</h3>
   <p>With the four tiers of grids available you're bound to run into issues where, at certain breakpoints, your columns don't clear quite right as one is taller than the other. To fix that, use a combination of a <code>.clearfix</code> and our <a href="#responsive-utilities">responsive utility classes</a>.</p>
+  <p>Com os quatro níveis de grids disponíveis você está obrigado a esbarrar em situações onde, em certas interrupções (breakpoints), suas colunas não limpam muito bem como quando uma é mais alta que a outra, utilize a combinação de um <code>.clearfix</code> e nosso <a href="#responsive-utilities">classes de responsividade</a>.</p>
   <div class="bs-docs-grid">
     <div class="row show-grid">
       <div class="col-xs-6 col-sm-3">
         .col-xs-6 .col-sm-3
         <br>
-        Resize your viewport or check it out on your phone for an example.
+        Redimensione sua tela ou verifique em seu celular para um exemplo.
       </div>
       <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
 
-      <!-- Add the extra clearfix for only the required viewport -->
+      <!-- Adicione um clearfix extra unicamente para as telas necessárias -->
       <div class="clearfix visible-xs"></div>
 
       <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
