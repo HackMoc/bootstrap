@@ -76,34 +76,34 @@ lead: "Global CSS settings, fundamental HTML elements styled and enhanced with e
     <p class="lead">Bootstrap inclui um sistema de grid responsivo, o primeiro sistema de grid para dispositivos móveis que apropriadamente dimensiona até 12 colunas na medida que a tela do dispositivo aumenta. Isso inclui <a href="#grid-example-basic">classes predefinidas</a> para facilitar as opções de layout, como também um poderoso <a href="#grid-less">alternativas para gerar layouts mais semânticos</a>.</p>
 
   <h3 id="grid-intro">Introdução</h3>
-  <p>Grid systems are used for creating page layouts through a series of rows and columns that house your content. Here's how the Bootstrap grid system works:</p>
+  <p>O sistema de Grid é usado para criar layout de páginas a partir de uma séries de linhas e colunas que abrigam seu conteúdo. Aqui explicamos como o sistema de Grid do Bootstrap funciona:</p>
   <ul>
-    <li>Rows must be placed within a <code>.container</code> (fixed-width) or <code>.container-fluid</code> (full-width) for proper alignment and padding.</li>
-    <li>Use rows to create horizontal groups of columns.</li>
-    <li>Content should be placed within columns, and only columns may be immediate children of rows.</li>
-    <li>Predefined grid classes like <code>.row</code> and <code>.col-xs-4</code> are available for quickly making grid layouts. Less mixins can also be used for more semantic layouts.</li>
-    <li>Columns create gutters (gaps between column content) via <code>padding</code>. That padding is offset in rows for the first and last column via negative margin on <code>.row</code>s.</li>
-    <li>Grid columns are created by specifying the number of twelve available columns you wish to span. For example, three equal columns would use three <code>.col-xs-4</code>.</li>
-    <li>Grid classes apply to devices with screen widths greater than or equal to the breakpoint sizes, and override grid classes targeted at smaller devices. Therefore, applying any <code>.col-md-</code> class to an element will not only affect its styling on medium devices but also on large devices if a <code>.col-lg-</code> class is not present.</li>
+    <li>As linhas (rows) devem ser colocadas em um <code>.container</code> (largura fixa) ou <code>.container-fluid</code> (largura completa) para o alinhamento e preenchimento adequado.</li>
+    <li>Utilize linhas (rows) para criar um grupo horizontal de colunas.</li>
+    <li>O conteúdo deve ser colocado em colunas, e somente colunas devem ser filhas imediadas das linhas (rows).</li>
+    <li>Classes predefinidas do grid como <code>.row</code> e <code>.col-xs-4</code> estão disponíveis para desenvolver rapidamente layouts em Grid. A alternativas do Less também podem ser utilizadas para um layout mais semântico.</li>
+    <li>Colunas (columns) criam um espaçamento (entra os conteudos das colunas) via <code>padding</code>. Esse espaçamento é compensado para as primeiras e últiumas colunas com uma margen negativa na <code>.row</code>.</li>
+    <li>Colunas do Grid são criadas para especificamente doze. Por exemplo, para três columas iguais deve-se usar três <code>.col-xs-4</code>.</li>
+    <li>Classes do Grid são aplicadas nos dispositivos com a largura da tela maior ou igual ao limite de tamanho, e sobrescreve as classes alvo nos dispositivos com menor resolução. Portanto, aplicando qualquer <code>.col-md-</code> classe para um elemento não afetará somente os estilos aplicados em dispositivos com resolução mediana, mas também em dispositivos de maior resolução se a classe <code>.col-lg-</code> não estiver presente.</li>
   </ul>
-  <p>Look to the examples for applying these principles to your code.</p>
+  <p>Veja os exemplos para aplicar estes pricípios para seu código.</p>
 
   <h3 id="grid-media-queries">Media queries</h3>
-  <p>We use the following media queries in our Less files to create the key breakpoints in our grid system.</p>
+  <p>Nós utilizamos os seguintes media queries em nosso arquivos Less para criar paradas em nosso sistema de Grid.</p>
 {% highlight scss %}
-/* Extra small devices (phones, less than 768px) */
-/* No media query since this is the default in Bootstrap */
+/* Dispositivos muito pequenos (celulares, menores que than 768px) */
+/* Nenhuma media query uma vez que este é o padrão do Bootstrap */
 
-/* Small devices (tablets, 768px and up) */
+/* Dispositivos pequenos (tablets, 768px e superiores) */
 @media (min-width: @screen-sm-min) { ... }
 
-/* Medium devices (desktops, 992px and up) */
+/* Dispositivos médios (desktops, 992px e superiores) */
 @media (min-width: @screen-md-min) { ... }
 
-/* Large devices (large desktops, 1200px and up) */
+/* Dispositivos grandes (grandes desktops, 1200px e superiores) */
 @media (min-width: @screen-lg-min) { ... }
 {% endhighlight %}
-  <p>We occasionally expand on these media queries to include a <code>max-width</code> to limit CSS to a narrower set of devices.</p>
+  <p>Nós ocasionalmente expandimos estes medias queries para incluir um <code>max-width</code> e limitar o CSS para um conjunto restrito de dispositivos.</p>
 {% highlight scss %}
 @media (max-width: @screen-xs-max) { ... }
 @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) { ... }
