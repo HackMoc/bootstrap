@@ -11,8 +11,8 @@ lead: "Over a dozen reusable components built to provide iconography, dropdowns,
 <div class="bs-docs-section">
   <h1 id="glyphicons" class="page-header">Glyphicons</h1>
 
-  <h2 id="glyphicons-glyphs">Available glyphs</h2>
-  <p>Includes 200 glyphs in font format from the Glyphicon Halflings set. <a href="http://glyphicons.com/">Glyphicons</a> Halflings are normally not available for free, but their creator has made them available for Bootstrap free of cost. As a thank you, we only ask that you include a link back to <a href="http://glyphicons.com/">Glyphicons</a> whenever possible.</p>
+  <h2 id="glyphicons-glyphs">Glyphs disponíveis</h2>
+  <p>Inclui 200 glyphs em formato de tipografia do conjunto Glyphicon Halflings. <a href="http://glyphicons.com/">Glyphicons</a> Halflings normalmente não são disponibilizados gratuitamente, mas seu criador os tornou disponíveis para o Bootstrap totalmente sem custos. Como agradecimento, nós pedimos para incluir um link para <a href="http://glyphicons.com/">Glyphicons</a> sempre que possível.</p>
   <div class="bs-glyphicons">
     <ul class="bs-glyphicons-list">
       {% for iconClassName in site.data.glyphicons %}
@@ -25,19 +25,19 @@ lead: "Over a dozen reusable components built to provide iconography, dropdowns,
   </div>
 
 
-  <h2 id="glyphicons-how-to-use">How to use</h2>
-  <p>For performance reasons, all icons require a base class and individual icon class. To use, place the following code just about anywhere. Be sure to leave a space between the icon and text for proper padding.</p>
+  <h2 id="glyphicons-how-to-use">Como usar</h2>
+  <p>Por razões de desempenho, todos os ícones requerem uma classe base e uma classe específica para cada ícone. Para usar, coloque o código abaixo em qualquer lugar. Certifique-se de deixar um espaço entre o ícone e o texto, para um espaçamento conciso.</p>
   <div class="bs-callout bs-callout-danger">
-    <h4>Don't mix with other components</h4>
-    <p>Icon classes cannot be directly combined with other components. They should not be used along with other classes on the same element. Instead, add a nested <code>&lt;span&gt;</code> and apply the icon classes to the <code>&lt;span&gt;</code>.</p>
+    <h4>Não misture com outros componentes</h4>
+    <p>Classes de ícones não podem ser diretamente combinadas com outros componentes. Não deve ser declaradas com outras classes no mesmo elemento. No lugar, adicione aninhado <code>&lt;span&gt;</code> e aplique a classe do icone ao <code>&lt;span&gt;</code>.</p>
   </div>
 {% highlight html %}
 <span class="glyphicon glyphicon-search"></span>
 {% endhighlight %}
 
 
-  <h2 id="glyphicons-examples">Examples</h2>
-  <p>Use them in buttons, button groups for a toolbar, navigation, or prepended form inputs.</p>
+  <h2 id="glyphicons-examples">Exemplos</h2>
+  <p>Use-os nos butões, gurpos de botões para uma barra de ferramentas, navegação, ou em campos de formulários.</p>
   <div class="bs-example">
     <div class="btn-toolbar" role="toolbar">
       <div class="btn-group">
