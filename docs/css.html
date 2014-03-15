@@ -9,12 +9,12 @@ lead: "Global CSS settings, fundamental HTML elements styled and enhanced with e
 <!-- Global Bootstrap settings
 ================================================== -->
 <div class="bs-docs-section">
-  <h1 id="overview" class="page-header">Overview</h1>
+  <h1 id="overview" class="page-header">Visão Geral</h1>
 
-  <p class="lead">Get the lowdown on the key pieces of Bootstrap's infrastructure, including our approach to better, faster, stronger web development.</p>
+  <p class="lead">As informações essenciais sobre a partes de infraestrutura do Bootstrap, incluindo nossa abordagem para melhorar, agilizar e fortalecer o desenvolvimento web.</p>
 
   <h3 id="overview-doctype">HTML5 doctype</h3>
-  <p>Bootstrap makes use of certain HTML elements and CSS properties that require the use of the HTML5 doctype. Include it at the beginning of all your projects.</p>
+  <p>O Bootstrap utilize certos elementos HTML e propriedades CSS que necessitam do uso do doctype HTML5. Incluso no início de todos seus projetos.</p>
 {% highlight html %}
 <!DOCTYPE html>
 <html lang="en">
@@ -22,12 +22,13 @@ lead: "Global CSS settings, fundamental HTML elements styled and enhanced with e
 </html>
 {% endhighlight %}
 
-  <h3 id="overview-mobile">Mobile first</h3>
-  <p>With Bootstrap 2, we added optional mobile friendly styles for key aspects of the framework. With Bootstrap 3, we've rewritten the project to be mobile friendly from the start. Instead of adding on optional mobile styles, they're baked right into the core. In fact, <strong>Bootstrap is mobile first</strong>. Mobile first styles can be found throughout the entire library instead of in separate files.</p>
-  <p>To ensure proper rendering and touch zooming, <strong>add the viewport meta tag</strong> to your <code>&lt;head&gt;</code>.</p>
+  <h3 id="overview-mobile">Primeiramente para Dispositivos Móveis</h3>
+  <p>Com o Boostrap 2, nós adicionamos estilos opcionais para dispositivos móveis para os pricinpais recursos do framework. No Boostrap 3, nós escrevemos o projeto para ser amigável a dispositivos móveis desde o começo. No lugar de adicionar estilos opcionais, eles foram introduzidos no núcleo. De fato, <strong>Bootstrap é primeiramente para dispositivos móveis</strong>. Estilos para dispositivos móveis podem sem encontrados por toda a parte em toda biblioteca, ao invés de arquivos separados.</p>
+  <p>Para garantir a renderização adequada de toque e ampliação, <strong>adicione a meta tag viewport </strong> para o seu<code>&lt;head&gt;</code>.</p>
 {% highlight html %}
 <meta name="viewport" content="width=device-width, initial-scale=1">
 {% endhighlight %}
+  <p>You can disable zooming capabilities on mobile devices by adding <code>user-scalable=no</code> to the viewport meta tag. This disables zooming, meaning users are only able to scroll, and results in your site feeling a bit more like a native application. Overall, we don't recommend this on every site, so use caution!</p>
   <p>You can disable zooming capabilities on mobile devices by adding <code>user-scalable=no</code> to the viewport meta tag. This disables zooming, meaning users are only able to scroll, and results in your site feeling a bit more like a native application. Overall, we don't recommend this on every site, so use caution!</p>
 {% highlight html %}
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
