@@ -111,84 +111,85 @@ lead: "Global CSS settings, fundamental HTML elements styled and enhanced with e
 @media (min-width: @screen-lg-min) { ... }
 {% endhighlight %}
 
-  <h3 id="grid-options">Grid options</h3>
-  <p>See how aspects of the Bootstrap grid system work across multiple devices with a handy table.</p>
+  <h3 id="grid-options">Opções do Grid</h3>
+  <p>Veja como os apectos do sistema de Grid do Bootstrap funciona para diversos dispositivos nesta tabela prática.</p>
   <div class="table-responsive">
     <table class="table table-bordered table-striped">
       <thead>
         <tr>
           <th></th>
           <th>
-            Extra small devices
+            Dispositivos muito pequenos
             <small>Phones (&lt;768px)</small>
           </th>
           <th>
-            Small devices
+            Dispositivos Pequenos
             <small>Tablets (&ge;768px)</small>
           </th>
           <th>
-            Medium devices
+            Dispositivos médios
             <small>Desktops (&ge;992px)</small>
           </th>
           <th>
-            Large devices
+            Dispositivos grandes
             <small>Desktops (&ge;1200px)</small>
           </th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <th>Grid behavior</th>
-          <td>Horizontal at all times</td>
-          <td colspan="3">Collapsed to start, horizontal above breakpoints</td>
+          <th>Comportamento do Grid</th>
+          <td>Horizontal todo o tempo</td>
+          <td colspan="3">Fechado no início, horizontal acima das quebras</td>
         </tr>
         <tr>
-          <th>Container width</th>
+          <th>Largura do Container</th>
           <td>None (auto)</td>
           <td>750px</td>
           <td>970px</td>
           <td>1170px</td>
         </tr>
         <tr>
-          <th>Class prefix</th>
+          <th>Prefixo das classes</th>
           <td><code>.col-xs-</code></td>
           <td><code>.col-sm-</code></td>
           <td><code>.col-md-</code></td>
           <td><code>.col-lg-</code></td>
         </tr>
         <tr>
-          <th># of columns</th>
+          <th># das colunas</th>
           <td colspan="4">12</td>
         </tr>
         <tr>
-          <th>Column width</th>
+          <th>Largura das colunas</th>
           <td class="text-muted">Auto</td>
           <td>~62px</td>
           <td>~81px</td>
           <td>~97px</td>
         </tr>
         <tr>
-          <th>Gutter width</th>
-          <td colspan="4">30px (15px on each side of a column)</td>
+          <th>Largura do espaçamento</th>
+          <td colspan="4">30px (15px em cada lado da coluna)</td>
         </tr>
         <tr>
-          <th>Nestable</th>
+          <th>Encaixável</th>
           <td colspan="4">Yes</td>
         </tr>
         <tr>
-          <th>Offsets</th>
+          <th>Deslocamentos</th>
           <td colspan="4">Yes</td>
         </tr>
         <tr>
-          <th>Column ordering</th>
+          <th>Ordenação de colunas</th>
           <td colspan="4">Yes</td>
         </tr>
       </tbody>
     </table>
   </div>
 
-  <h3 id="grid-example-basic">Example: Stacked-to-horizontal</h3>
+  <h3 id="grid-example-basic">Exemplo: empilhados na horizontal</h3>
   <p>Using a single set of <code>.col-md-*</code> grid classes, you can create a basic grid system that starts out stacked on mobile devices and tablet devices (the extra small to small range) before becoming horizontal on desktop (medium) devices. Place grid columns in any <code>.row</code>.</p>
+  <p>Usando um simples conjunto de classes de grid <code>.col-md-*</code>, você pode criar um simples sistema de grid que inicia empilhando no dispositivos móveis e tables (do muito pequeno ao pequeno) depois se torna horizontal para desktops (médios). Coloque as colunas do grid em qualquer <code>.row</code>.</p>
   <div class="bs-docs-grid">
     <div class="row show-grid">
       <div class="col-md-1">.col-md-1</div>
@@ -248,8 +249,8 @@ lead: "Global CSS settings, fundamental HTML elements styled and enhanced with e
 </div>
 {% endhighlight %}
 
-  <h3 id="grid-example-fluid">Example: Fluid container</h3>
-  <p>Turn any fixed-width grid layout into a full-width layout by changing your outermost <code>.container</code> to <code>.container-fluid</code>.</p>
+  <h3 id="grid-example-fluid">Example: container fluído</h3>
+  <p>Transforme qualquer layout com grid de largura fixa em largura total alterando o seu <code>.container</code> para <code>.container-fluid</code>.</p>
 {% highlight html %}
 <div class="container-fluid">
   <div class="row">
@@ -258,8 +259,9 @@ lead: "Global CSS settings, fundamental HTML elements styled and enhanced with e
 </div>
 {% endhighlight %}
 
-  <h3 id="grid-example-mixed">Example: Mobile and desktop</h3>
+  <h3 id="grid-example-mixed">Exemplo: Dispositivos móveis e Desktop</h3>
   <p>Don't want your columns to simply stack in smaller devices? Use the extra small and medium device grid classes by adding <code>.col-xs-*</code> <code>.col-md-*</code> to your columns. See the example below for a better idea of how it all works.</p>
+  <p>Não deseja que suas colunas simplesmente empilhem em dispositivos pequenos? Utilize o grid para dispositivos muito pequenos e pequenos adicionando <code>.col-xs-*</code> <code>.col-md-*</code> em suas colunas. Veja no exemplo abaixo para uma melhor ideia de como isto funciona.</p>
   <div class="bs-docs-grid">
     <div class="row show-grid">
       <div class="col-xs-12 col-md-8">.col-xs-12 .col-md-8</div>
@@ -276,28 +278,28 @@ lead: "Global CSS settings, fundamental HTML elements styled and enhanced with e
     </div>
   </div>
 {% highlight html %}
-<!-- Stack the columns on mobile by making one full-width and the other half-width -->
+<!-- Empilhe as colunas nos disitivos móveis fazendo um com largura total e outro com meia largura -->
 <div class="row">
   <div class="col-xs-12 col-md-8">.col-xs-12 .col-md-8</div>
   <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
 </div>
 
-<!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+<!-- Colunas iniciam em 50% da largura nos dispositivos móveis e chocam em 33.3% da largura nos desktops -->
 <div class="row">
   <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
   <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
   <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
 </div>
 
-<!-- Columns are always 50% wide, on mobile and desktop -->
+<!-- Colunas são sempre 50% da largura, nos dispositivos móveis e desktops -->
 <div class="row">
   <div class="col-xs-6">.col-xs-6</div>
   <div class="col-xs-6">.col-xs-6</div>
 </div>
 {% endhighlight %}
 
-  <h3 id="grid-example-mixed-complete">Example: Mobile, tablet, desktops</h3>
-  <p>Build on the previous example by creating even more dynamic and powerful layouts with tablet <code>.col-sm-*</code> classes.</p>
+  <h3 id="grid-example-mixed-complete">Example: Dispositivo móvel, tablet, desktops</h3>
+  <p>Contruído sobre o exemplo anterior criando um layout ainda mais dinâmico e poderoso com <code>.col-sm-*</code> classes para tablet.</p>
   <div class="bs-docs-grid">
     <div class="row show-grid">
       <div class="col-xs-12 col-sm-6 col-md-8">.col-xs-12 .col-sm-6 .col-md-8</div>
@@ -306,7 +308,7 @@ lead: "Global CSS settings, fundamental HTML elements styled and enhanced with e
     <div class="row show-grid">
       <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
       <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
-      <!-- Optional: clear the XS cols if their content doesn't match in height -->
+      <!-- Opcional: Limpe as colunas XS (XS cols) se seus conteúdo não corresponder na altura -->
       <div class="clearfix visible-xs"></div>
       <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
     </div>
@@ -319,7 +321,7 @@ lead: "Global CSS settings, fundamental HTML elements styled and enhanced with e
 <div class="row">
   <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
   <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
-  <!-- Optional: clear the XS cols if their content doesn't match in height -->
+  <!-- Opcional: limpe as colunas XS (XS cols) se seus conteudo não corresponder na altura -->
   <div class="clearfix visible-xs"></div>
   <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
 </div>
