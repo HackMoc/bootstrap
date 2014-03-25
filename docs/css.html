@@ -344,14 +344,14 @@ lead: "Global CSS settings, fundamental HTML elements styled and enhanced with e
   <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
   <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
 
-  <!-- Add the extra clearfix for only the required viewport -->
+  <!-- Adicione um clearfix extra somente para o viewport obrigatório -->
   <div class="clearfix visible-xs"></div>
 
   <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
   <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
 </div>
 {% endhighlight %}
-  <p>In addition to column clearing at responsive breakpoints, you may need to <strong>reset offsets, pushes, or pulls</strong>. See this in action in <a href="../examples/grid/">the grid example</a>.</p>
+  <p>Em adição a limpeza da coluna nos breakpoints responsivos, você pode precisar <strong>resetar os offsets, pushes ou pulls</strong>. Veja isso em ação na seção de <a href="../examples/grid/">exemplo do grid</a>.</p>
 {% highlight html %}
 <div class="row">
   <div class="col-sm-5 col-md-6">.col-sm-5 .col-md-6</div>
@@ -365,8 +365,8 @@ lead: "Global CSS settings, fundamental HTML elements styled and enhanced with e
 {% endhighlight %}
 
 
-  <h3 id="grid-offsetting">Offsetting columns</h3>
-  <p>Move columns to the right using <code>.col-md-offset-*</code> classes. These classes increase the left margin of a column by <code>*</code> columns. For example, <code>.col-md-offset-4</code> moves <code>.col-md-4</code> over four columns.</p>
+  <h3 id="grid-offsetting">Deslocando colunas</h3>
+  <p>Mover colunas para a direita utilizando classes <code>.col-md-offset-*</code>. Essas classes aumentam a margem esquerda da coluna em <code>*</code> colunas. Por exemplo, <code>.col-md-offset-4</code> move <code>.col-md-4</code> em quatro colunas.</p>
   <div class="bs-docs-grid">
     <div class="row show-grid">
       <div class="col-md-4">.col-md-4</div>
@@ -395,17 +395,17 @@ lead: "Global CSS settings, fundamental HTML elements styled and enhanced with e
 {% endhighlight %}
 
 
-  <h3 id="grid-nesting">Nesting columns</h3>
-  <p>To nest your content with the default grid, add a new <code>.row</code> and set of <code>.col-md-*</code> columns within an existing <code>.col-md-*</code> column. Nested rows should include a set of columns that add up to 12 or less.</p>
+  <h3 id="grid-nesting">Aninhamento de colunas</h3>
+  <p>Para aninhar o seu conteúdo com o grid padrão, adicione um novo <code>.row</code> e um conjunto de colunas <code>.col-md-*</code> com uma coluna <code>.col-md-*</code> existente. Linhas aninhadas devem incluir um conjunto de colunas que adicionem 12 ou menos.</p>
   <div class="row show-grid">
     <div class="col-md-9">
-      Level 1: .col-md-9
+      Nível 1: .col-md-9
       <div class="row show-grid">
         <div class="col-md-6">
-          Level 2: .col-md-6
+          Nível 2: .col-md-6
         </div>
         <div class="col-md-6">
-          Level 2: .col-md-6
+          Nível 2: .col-md-6
         </div>
       </div>
     </div>
@@ -413,21 +413,21 @@ lead: "Global CSS settings, fundamental HTML elements styled and enhanced with e
 {% highlight html %}
 <div class="row">
   <div class="col-md-9">
-    Level 1: .col-md-9
+    Nível 1: .col-md-9
     <div class="row">
       <div class="col-md-6">
-        Level 2: .col-md-6
+        Nível 2: .col-md-6
       </div>
       <div class="col-md-6">
-        Level 2: .col-md-6
+        Nível 2: .col-md-6
       </div>
     </div>
   </div>
 </div>
 {% endhighlight %}
 
-  <h3 id="grid-column-ordering">Column ordering</h3>
-  <p>Easily change the order of our built-in grid columns with <code>.col-md-push-*</code> and <code>.col-md-pull-*</code> modifier classes.</p>
+  <h3 id="grid-column-ordering">Ordenação de colunas</h3>
+  <p>Mude facilmente a ordem das colunas de seu grid com as classes modificadoras <code>.col-md-push-*</code> e <code>.col-md-pull-*</code>.</p>
   <div class="row show-grid">
     <div class="col-md-9 col-md-push-3">.col-md-9 .col-md-push-3</div>
     <div class="col-md-3 col-md-pull-9">.col-md-3 .col-md-pull-9</div>
