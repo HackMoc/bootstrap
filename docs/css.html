@@ -11,10 +11,10 @@ lead: "Global CSS settings, fundamental HTML elements styled and enhanced with e
 <div class="bs-docs-section">
   <h1 id="overview" class="page-header">Visão Geral</h1>
 
-  <p class="lead">As informações essenciais sobre a partes de infraestrutura do Bootstrap, incluindo nossa abordagem para melhorar, agilizar e fortalecer o desenvolvimento web.</p>
+  <p class="lead">As informações essenciais sobre as partes de infraestrutura do Bootstrap, incluindo nossa abordagem para melhorar, agilizar e fortalecer o desenvolvimento web.</p>
 
   <h3 id="overview-doctype">HTML5 doctype</h3>
-  <p>O Bootstrap utilize certos elementos HTML e propriedades CSS que necessitam do uso do doctype HTML5. Incluso no início de todos seus projetos.</p>
+  <p>O Bootstrap utiliza certos elementos HTML e propriedades CSS que necessitam do uso do doctype HTML5. Incluso no início de todos seus projetos.</p>
 {% highlight html %}
 <!DOCTYPE html>
 <html lang="en">
@@ -23,25 +23,23 @@ lead: "Global CSS settings, fundamental HTML elements styled and enhanced with e
 {% endhighlight %}
 
   <h3 id="overview-mobile">Primeiramente para Dispositivos Móveis</h3>
-  <p>Com o Boostrap 2, nós adicionamos estilos opcionais para dispositivos móveis para os pricinpais recursos do framework. No Boostrap 3, nós escrevemos o projeto para ser amigável a dispositivos móveis desde o começo. No lugar de adicionar estilos opcionais, eles foram introduzidos no núcleo. De fato, <strong>Bootstrap é primeiramente para dispositivos móveis</strong>. Estilos para dispositivos móveis podem sem encontrados por toda a parte em toda biblioteca, ao invés de arquivos separados.</p>
+  <p>Com o Boostrap 2, nós adicionamos estilos opcionais para dispositivos móveis para os principais recursos do framework. No Boostrap 3, nós reescrevemos o projeto para ser amigável a dispositivos móveis desde o começo. Ao invés de adicionar estilos opcionais, eles foram introduzidos no núcleo. De fato, <strong>Bootstrap é primeiramente para dispositivos móveis</strong>. Estilos para dispositivos móveis podem sem encontrados por toda a parte em toda a biblioteca, ao invés de em arquivos separados.</p>
   <p>Para garantir a renderização adequada de toque e ampliação, <strong>adicione a meta tag viewport </strong> para o seu<code>&lt;head&gt;</code>.</p>
 {% highlight html %}
 <meta name="viewport" content="width=device-width, initial-scale=1">
 {% endhighlight %}
-  <p>Você pode desativar a capacidade de ampliação em dispositivos móveis adicionando <code>user-scalable=no</code> para a meta tag viewport. Isto desativa a ampliação, significa que usuários somente estarão aptos a rolar, o resultado será um site mais parecido com uma apliação nativa. Em geral, não recomendamos isto para todos os sites, use com cautela!</p>
+  <p>Você pode desativar a capacidade de ampliação em dispositivos móveis adicionando <code>user-scalable=no</code> para a meta tag viewport. Isto desativa a ampliação, significa que usuários somente estarão aptos a rolar, o resultado será um site mais parecido com uma apliação nativa. Em geral, não recomendamos isso para todos os sites, use com cautela!</p>
 {% highlight html %}
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 {% endhighlight %}
 
   <h3 id="overview-type-links">Tipografia e links</h3>
-  <p>Bootstrap sets basic global display, typography, and link styles. Specifically, we:</p>
-  <p>Bootstrap define a forma global de visualização, a tipografia e estilo de links. Especificamente, nós:</p>
+  <p>Bootstrap define a forma global de visualização, a tipografia e o estilo de links. Especificamente, nós:</p>
   <ul>
     <li>Definimos <code>background-color: #fff;</code> no <code>body</code></li>
     <li>Usamos <code>@font-family-base</code>, <code>@font-size-base</code>, e <code>@line-height-base</code> como nosso atributo base para tipografia</li>
     <li>Definimos a cor global dos links via <code>@link-color</code> e aplicamos sublinhados somenente em links quando <code>:hover</code></li>
   </ul>
-  <p>These styles can be found within <code>scaffolding.less</code>.</p>
   <p>Estes estilos podem ser encontrados utilizando <code>scaffolding.less</code>.</p>
 
   <h3 id="overview-normalize">Normalize.css</h3>
@@ -49,7 +47,6 @@ lead: "Global CSS settings, fundamental HTML elements styled and enhanced with e
   <p>Para melhorar a renderização entre navegadores, nós usamos <a href="http://necolas.github.io/normalize.css/" target="_blank">Normalize.css</a>, um projeto de <a href="http://twitter.com/necolas" target="_blank">Nicolas Gallagher</a> e <a href="http://twitter.com/jon_neal" target="_blank">Jonathan Neal</a>.</p>
 
   <h3 id="overview-container">Containers</h3>
-  <p>Bootstrap requires a containing element to wrap site contents and house our grid system. You may choose one of two containers to use in your projects. Note that, due to <code>padding</code> and more, neither container is nestable.</p>
   <p>Bootstrap requer um elemento container para envolver os conteúdos do site e abrigar nosso sistema de grid. Você pode optar por um ou dois containers para utilizar em seus projetos. Note que, devido ao <code>padding</code> e outras coisas, nenhum container é encaixável.</p>
   <p>Utilize <code>.container</code> para um container responsivo de largura fixa.</p>
 {% highlight html %}
@@ -57,7 +54,6 @@ lead: "Global CSS settings, fundamental HTML elements styled and enhanced with e
   ...
 </div>
 {% endhighlight %}
-  <p>Use <code>.container-fluid</code> for a full width container, spanning the entire width of your viewport.</p>
   <p>Utilize <code>.container-fluid</code> para um container de largura completa, abrangendo toda largura da sua tela.</p>
 {% highlight html %}
 <div class="container-fluid">
@@ -73,7 +69,7 @@ lead: "Global CSS settings, fundamental HTML elements styled and enhanced with e
 <div class="bs-docs-section">
   <h1 id="grid" class="page-header">Sistema de Grid</h1>
 
-    <p class="lead">Bootstrap inclui um sistema de grid responsivo, o primeiro sistema de grid para dispositivos móveis que apropriadamente dimensiona até 12 colunas na medida que a tela do dispositivo aumenta. Isso inclui <a href="#grid-example-basic">classes predefinidas</a> para facilitar as opções de layout, como também um poderoso <a href="#grid-less">alternativas para gerar layouts mais semânticos</a>.</p>
+    <p class="lead">Bootstrap inclui um sistema de grid responsivo, o primeiro sistema de grid para dispositivos móveis que apropriadamente dimensiona até 12 colunas na medida que a tela do dispositivo aumenta. Isso inclui <a href="#grid-example-basic">classes predefinidas</a> para facilitar as opções de layout, como também uma poderosa <a href="#grid-less">alternativa para gerar layouts mais semânticos</a>.</p>
 
   <h3 id="grid-intro">Introdução</h3>
   <p>O sistema de Grid é usado para criar layout de páginas a partir de uma séries de linhas e colunas que abrigam seu conteúdo. Aqui explicamos como o sistema de Grid do Bootstrap funciona:</p>
@@ -81,12 +77,12 @@ lead: "Global CSS settings, fundamental HTML elements styled and enhanced with e
     <li>As linhas (rows) devem ser colocadas em um <code>.container</code> (largura fixa) ou <code>.container-fluid</code> (largura completa) para o alinhamento e preenchimento adequado.</li>
     <li>Utilize linhas (rows) para criar um grupo horizontal de colunas.</li>
     <li>O conteúdo deve ser colocado em colunas, e somente colunas devem ser filhas imediadas das linhas (rows).</li>
-    <li>Classes predefinidas do grid como <code>.row</code> e <code>.col-xs-4</code> estão disponíveis para desenvolver rapidamente layouts em Grid. A alternativas do Less também podem ser utilizadas para um layout mais semântico.</li>
-    <li>Colunas (columns) criam um espaçamento (entra os conteudos das colunas) via <code>padding</code>. Esse espaçamento é compensado para as primeiras e últiumas colunas com uma margen negativa na <code>.row</code>.</li>
+    <li>Classes predefinidas do grid como <code>.row</code> e <code>.col-xs-4</code> estão disponíveis para desenvolver rapidamente layouts em Grid. As alternativas do Less também podem ser utilizadas para um layout mais semântico.</li>
+    <li>Colunas (columns) criam um espaçamento (entra os conteúdos das colunas) via <code>padding</code>. Esse espaçamento é compensado para as primeiras e últimas colunas com uma margem negativa na <code>.row</code>.</li>
     <li>Colunas do Grid são criadas para especificamente doze. Por exemplo, para três columas iguais deve-se usar três <code>.col-xs-4</code>.</li>
     <li>Classes do Grid são aplicadas nos dispositivos com a largura da tela maior ou igual ao limite de tamanho, e sobrescreve as classes alvo nos dispositivos com menor resolução. Portanto, aplicando qualquer <code>.col-md-</code> classe para um elemento não afetará somente os estilos aplicados em dispositivos com resolução mediana, mas também em dispositivos de maior resolução se a classe <code>.col-lg-</code> não estiver presente.</li>
   </ul>
-  <p>Veja os exemplos para aplicar estes pricípios para seu código.</p>
+  <p>Veja os exemplos para aplicar estes pricípios ao seu código.</p>
 
   <h3 id="grid-media-queries">Media queries</h3>
   <p>Nós utilizamos os seguintes media queries em nosso arquivos Less para criar paradas em nosso sistema de Grid.</p>
@@ -112,7 +108,7 @@ lead: "Global CSS settings, fundamental HTML elements styled and enhanced with e
 {% endhighlight %}
 
   <h3 id="grid-options">Opções do Grid</h3>
-  <p>Veja como os apectos do sistema de Grid do Bootstrap funciona para diversos dispositivos nesta tabela prática.</p>
+  <p>Veja como os apectos do sistema de Grid do Bootstrap funcionam para diversos dispositivos nesta tabela prática.</p>
   <div class="table-responsive">
     <table class="table table-bordered table-striped">
       <thead>
@@ -120,7 +116,7 @@ lead: "Global CSS settings, fundamental HTML elements styled and enhanced with e
           <th></th>
           <th>
             Dispositivos muito pequenos
-            <small>Phones (&lt;768px)</small>
+            <small>Telefones (&lt;768px)</small>
           </th>
           <th>
             Dispositivos Pequenos
@@ -188,8 +184,7 @@ lead: "Global CSS settings, fundamental HTML elements styled and enhanced with e
   </div>
 
   <h3 id="grid-example-basic">Exemplo: empilhados na horizontal</h3>
-  <p>Using a single set of <code>.col-md-*</code> grid classes, you can create a basic grid system that starts out stacked on mobile devices and tablet devices (the extra small to small range) before becoming horizontal on desktop (medium) devices. Place grid columns in any <code>.row</code>.</p>
-  <p>Usando um simples conjunto de classes de grid <code>.col-md-*</code>, você pode criar um simples sistema de grid que inicia empilhando no dispositivos móveis e tables (do muito pequeno ao pequeno) depois se torna horizontal para desktops (médios). Coloque as colunas do grid em qualquer <code>.row</code>.</p>
+  <p>Usando um simples conjunto de classes de grid <code>.col-md-*</code>, você pode criar um simples sistema de grid que inicia empilhando nos dispositivos móveis e tables (do muito pequeno ao pequeno) depois se torna horizontal para desktops (médios). Coloque as colunas do grid em qualquer <code>.row</code>.</p>
   <div class="bs-docs-grid">
     <div class="row show-grid">
       <div class="col-md-1">.col-md-1</div>
@@ -260,8 +255,7 @@ lead: "Global CSS settings, fundamental HTML elements styled and enhanced with e
 {% endhighlight %}
 
   <h3 id="grid-example-mixed">Exemplo: Dispositivos móveis e Desktop</h3>
-  <p>Don't want your columns to simply stack in smaller devices? Use the extra small and medium device grid classes by adding <code>.col-xs-*</code> <code>.col-md-*</code> to your columns. See the example below for a better idea of how it all works.</p>
-  <p>Não deseja que suas colunas simplesmente empilhem em dispositivos pequenos? Utilize o grid para dispositivos muito pequenos e pequenos adicionando <code>.col-xs-*</code> <code>.col-md-*</code> em suas colunas. Veja no exemplo abaixo para uma melhor ideia de como isto funciona.</p>
+  <p>Não quer que suas colunas simplesmente empilhem em dispositivos pequenos? Utilize o grid para dispositivos muito pequenos e pequenos adicionando <code>.col-xs-*</code> <code>.col-md-*</code> em suas colunas. Veja no exemplo abaixo para uma melhor ideia de como isso funciona.</p>
   <div class="bs-docs-grid">
     <div class="row show-grid">
       <div class="col-xs-12 col-md-8">.col-xs-12 .col-md-8</div>
@@ -298,8 +292,8 @@ lead: "Global CSS settings, fundamental HTML elements styled and enhanced with e
 </div>
 {% endhighlight %}
 
-  <h3 id="grid-example-mixed-complete">Example: Dispositivo móvel, tablet, desktops</h3>
-  <p>Contruído sobre o exemplo anterior criando um layout ainda mais dinâmico e poderoso com <code>.col-sm-*</code> classes para tablet.</p>
+  <h3 id="grid-example-mixed-complete">Exemplo: Dispositivo móvel, tablet, desktops</h3>
+  <p>Contruído sobre o exemplo anterior, criando um layout ainda mais dinâmico e poderoso com classes <code>.col-sm-*</code> para tablet.</p>
   <div class="bs-docs-grid">
     <div class="row show-grid">
       <div class="col-xs-12 col-sm-6 col-md-8">.col-xs-12 .col-sm-6 .col-md-8</div>
@@ -308,7 +302,7 @@ lead: "Global CSS settings, fundamental HTML elements styled and enhanced with e
     <div class="row show-grid">
       <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
       <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
-      <!-- Opcional: Limpe as colunas XS (XS cols) se seus conteúdo não corresponder na altura -->
+      <!-- Opcional: Limpe as colunas XS (XS cols) se o conteúdo não corresponder na altura -->
       <div class="clearfix visible-xs"></div>
       <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
     </div>
@@ -321,16 +315,14 @@ lead: "Global CSS settings, fundamental HTML elements styled and enhanced with e
 <div class="row">
   <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
   <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
-  <!-- Opcional: limpe as colunas XS (XS cols) se seus conteudo não corresponder na altura -->
+  <!-- Opcional: limpe as colunas XS (XS cols) se o conteúdo não corresponder na altura -->
   <div class="clearfix visible-xs"></div>
   <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
 </div>
 {% endhighlight %}
 
-  <h3 id="grid-responsive-resets">Responsive column resets</h3>
   <h3 id="grid-responsive-resets">Redefinição de responsividade de colunas</h3>
-  <p>With the four tiers of grids available you're bound to run into issues where, at certain breakpoints, your columns don't clear quite right as one is taller than the other. To fix that, use a combination of a <code>.clearfix</code> and our <a href="#responsive-utilities">responsive utility classes</a>.</p>
-  <p>Com os quatro níveis de grids disponíveis você está obrigado a esbarrar em situações onde, em certas interrupções (breakpoints), suas colunas não limpam muito bem como quando uma é mais alta que a outra, utilize a combinação de um <code>.clearfix</code> e nosso <a href="#responsive-utilities">classes de responsividade</a>.</p>
+  <p>Com os quatro níveis de grids disponíveis você é obrigado a esbarrar em situações onde, em certas interrupções (breakpoints), suas colunas não limpam muito bem como quando uma é mais alta que a outra, utilize a combinação de um <code>.clearfix</code> e nossas <a href="#responsive-utilities">classes de responsividade</a>.</p>
   <div class="bs-docs-grid">
     <div class="row show-grid">
       <div class="col-xs-6 col-sm-3">
