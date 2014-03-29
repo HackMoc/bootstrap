@@ -1,73 +1,73 @@
----
+﻿---
 layout: default
-title: Getting started
+title: Primeiros Passos
 slug: getting-started
-lead: "An overview of Bootstrap, how to download and use, basic templates and examples, and more."
+lead: "Uma visão geral do Bootstrap, como baixar e usar, modelos e exemplos básicos e muito mais."
 ---
 
 
-<!-- Getting started
+<!-- Primeiros Passos
 ================================================== -->
 <div class="bs-docs-section">
   <h1 id="download" class="page-header">Download</h1>
 
-  <p class="lead">Bootstrap has a few easy ways to quickly get started, each one appealing to a different skill level and use case. Read through to see what suits your particular needs.</p>
+  <p class="lead">Bootstrap tem alguns jeitos rápidos de começar, cada um tem níveis de habilidade e necessidades diferentes. Leia para ver o que se adapta às suas necessidades individuais.</p>
 
   <div class="row bs-downloads">
     <div class="col-sm-4">
       <h3 id="download-bootstrap">Bootstrap</h3>
-      <p>Compiled and minified CSS, JavaScript, and fonts. No docs or original source files are included.</p>
+      <p> CSS, JavaScript, e fontes compilado e minificado. Nenhum dos documentos ou dos arquivos fontes originais são incluídos.</p>
       <a href="{{ site.download.dist }}" class="btn btn-lg btn-outline" role="button" onclick="_gaq.push(['_trackEvent', 'Getting started', 'Download', 'Download compiled']);">Download Bootstrap</a>
     </div>
     <div class="col-sm-4">
-      <h3 id="download-source">Source code</h3>
-      <p>Source Less, JavaScript, and font files, along with our docs. <strong>Requires a Less compiler and <a href="{{ site.repo }}#compiling-css-and-javascript">some setup.</a></strong></p>
-      <a href="{{ site.download.source }}" class="btn btn-lg btn-outline" role="button" onclick="_gaq.push(['_trackEvent', 'Getting started', 'Download', 'Download source']);">Download source</a>
+      <h3 id="download-source">código fonte</h3>
+      <p>Código Less, JavaScript, e arquivos fontes,juntamente com os nossos documentos. <strong>Requer um compilador Less e <a href="{{ site.repo }}#compiling-css-and-javascript">algumas configurações</a></strong></p>
+      <a href="{{ site.download.source }}" class="btn btn-lg btn-outline" role="button" onclick="_gaq.push(['_trackEvent', 'Getting started', 'Download', 'Download source']);">Download da fonte</a>
     </div>
     <div class="col-sm-4">
       <h3 id="download-sass">Sass</h3>
-      <p><a href="{{ site.sass_repo }}">Bootstrap ported from Less to Sass</a> for easy inclusion in Rails, Compass, or Sass-only projects.</p>
+      <p><a href="{{ site.sass_repo }}">Bootstrap convete Less para Sass</a> para fácil inclusão em Rails, Compass, ou projetos de apenas Sass.</p>
       <a href="{{ site.download.sass }}" class="btn btn-lg btn-outline" role="button" onclick="_gaq.push(['_trackEvent', 'Getting started', 'Download', 'Download Sass']);">Download Sass</a>
     </div>
   </div>
-  <p class="muted">Currently v{{ site.current_version }}.</p>
+  <p class="muted">Versão Atual v{{ site.current_version }}.</p>
 
   <h3 id="download-cdn">Bootstrap CDN</h3>
-  <p>The folks over at <a href="http://www.maxcdn.com/">MaxCDN</a> graciously provide CDN support for Bootstrap's CSS and JavaScript. Just use these <a href="http://www.bootstrapcdn.com/">Bootstrap CDN</a> links.</p>
+  <p>Nós no  <a href="http://www.maxcdn.com/">MaxCDN</a> graciosamente damos suporte CDN para CSS JavaScript do Bootstrap. Apenas use esses <a href="http://www.bootstrapcdn.com/">links do</a> CDN Bootstrap.</p>
 {% highlight html %}
-<!-- Latest compiled and minified CSS -->
+<!-- Último CSS e CND complicado e minificado -->
 <link rel="stylesheet" href="{{ site.cdn.css }}">
 
-<!-- Optional theme -->
+<!-- tema opicional -->
 <link rel="stylesheet" href="{{ site.cdn.css_theme }}">
 
-<!-- Latest compiled and minified JavaScript -->
+<!-- Último JavaScript complicado e minificado -->
 <script src="{{ site.cdn.js }}"></script>
 {% endhighlight %}
 
-  <h3 id="download-bower">Install with Bower</h3>
-  <p>Install and manage Bootstrap's Less, CSS, JavaScript, and fonts using <a href="http://bower.io">Bower</a>.</p>
+  <h3 id="download-bower">Instalar com Bower</h3>
+  <Instalar e gerenciar o Less, CSS, JavaScript e fontes do Bootstrap usando <a href="http://bower.io">Bower</a>.</p>
   {% highlight bash %}$ bower install bootstrap{% endhighlight %}
 </div>
 
 
 
-<!-- File structure
+<!-- Estrutura do arquivo
 ================================================== -->
 <div class="bs-docs-section">
-  <h1 id="whats-included" class="page-header">What's included</h1>
+  <h1 id="whats-included" class="page-header">O que está incluído</h1>
 
-  <p class="lead">Bootstrap is downloadable in two forms, within which you'll find the following directories and files, logically grouping common resources and providing both compiled and minified variations.</p>
+  <p class="lead">Bootstrap está disponível para download em duas formas, dentro do qual você vai encontrar os seguintes diretórios e arquivos, agrupando logicamente recursos comuns e fornecendo variações compiladas e minificadas.</p>
 
   <div class="bs-callout bs-callout-warning" id="jquery-required">
-    <h4>jQuery required</h4>
-    <p>Please note that <strong>all JavaScript plugins require jQuery</strong> to be included, as shown in the <a href="#template">starter template</a>. <a href="{{ site.repo }}/blob/v{{ site.current_version }}/bower.json">Consult our <code>bower.json</code></a> to see which versions of jQuery are supported.</p>
+    <h4>Requisão jQuery</h4>
+    <p>Por favor note que <strong>todos plugins JavaScript requerem jQuery</strong> para serem incluídos, como mostrado no <a href="#template">modelo inicial</a>. <a href="{{ site.repo }}/blob/v{{ site.current_version }}/bower.json">Consulte nosso <code>bower.json</code></a> para ver quais versões do jQuery são suportadas.</p>
   </div>
 
-  <h2 id="whats-included-precompiled">Precompiled Bootstrap</h2>
-  <p>Once downloaded, unzip the compressed folder to see the structure of (the compiled) Bootstrap. You'll see something like this:</p>
-<!-- NOTE: This info is intentionally duplicated in the README.
-Copy any changes made here over to the README too. -->
+  <h2 id="whats-included-precompiled"> Bootstrap pré-compilado</h2>
+  <p>Uma vez baixado, descompacte a pasta compactada para ver a estrutura do(compilado) Bootstrap. Você verá algo como isto:</p>
+<!-- Nota: Essa informação intecionalmente duplicada no LEIAME.
+Copie quaisquer alterações feitas aqui para o LEIAME também. -->
 {% highlight bash %}
 bootstrap/
 ├── css/
@@ -85,10 +85,11 @@ bootstrap/
     └── glyphicons-halflings-regular.woff
 {% endhighlight %}
 
-  <p>This is the most basic form of Bootstrap: precompiled files for quick drop-in usage in nearly any web project. We provide compiled CSS and JS (<code>bootstrap.*</code>), as well as compiled and minified CSS and JS (<code>bootstrap.min.*</code>). Fonts from Glyphicons are included, as is the optional Bootstrap theme.</p>
+  <p>Esta é a forma mais básica do Bootstrap: arquivos pré-compilados para uso rápido em qualquer projeto web. Nós fornecemos CSS e JS compilado(<code>bootstrap.*</code>), bem como CSS e JS compilado e minificado (<code>bootstrap.min.*</code>). Fontes do Glyphicons estão incluídas, como é o tema opicional do Bootstrap.</p>
 
   <h2 id="whats-included-source">Bootstrap source code</h2>
-  <p>The Bootstrap source code download includes the precompiled CSS, JavaScript, and font assets, along with source Less, JavaScript, and documentation. More specifically, it includes the following and more:</p>
+  <p>
+O download do código fonte do Bootstrap inclui o CSS, JavaScript e  pré-compilado, juntamente com a fonte Less, JavaScript, e documentação. Mais específicamente, inclui os seguintes arquivos e mais:</p>
 {% highlight bash %}
 bootstrap/
 ├── less/
@@ -101,19 +102,19 @@ bootstrap/
 └── docs/
     └── examples/
 {% endhighlight %}
-  <p>The <code>less/</code>, <code>js/</code>, and <code>fonts/</code> are the source code for our CSS, JS, and icon fonts (respectively). The <code>dist/</code> folder includes everything listed in the precompiled download section above. The <code>docs/</code> folder includes the source code for our documentation, and <code>examples/</code> of Bootstrap usage. Beyond that, any other included file provides support for packages, license information, and development.</p>
+  <p> os <code>less/</code>, <code>js/</code>, e <code>fontes/</code> são o código fonte para o nosso CSS, JS, e fontes ícone (respectivamente). A pasta <code>dist/</code> inclui tudo listado na seção acima de download pré-compilados. O documentos. A pasta <code>docs/</code> inclui o código fonte para a nossa documentação, e <code>exaemplos/</code> de uso do Bootstrap. Além disso, qualquer outro arquivo incluso fornece suporte para pacotes, informações de licença e de desenvolvimento.</p>
 </div>
 
 
 
-<!-- Template
+<!-- Modelo
 ================================================== -->
 <div class="bs-docs-section">
-  <h1 id="template" class="page-header">Basic template</h1>
+  <h1 id="template" class="page-header">Modelo básico</h1>
 
-  <p class="lead">Start with this basic HTML template, or modify <a href="#examples">these examples</a>. We hope you'll customize our templates and examples, adapting them to suit your needs.</p>
+  <p class="lead">Inicie com esse modelo básico de HTML, ou modifique <a href="#examples">esses exemplos</a>. Nós esperamos que você customize nossos modelos e exemplos, adaptando-os para suprir suas necessidades.</p>
 
-  <p>Copy the HTML below to begin working with a minimal Bootstrap document.</p>
+  <p> Copie o HTML para iniciar o trabalho com um documento mínimo do Bootstrap.</p>
 {% highlight html %}
 <!DOCTYPE html>
 <html lang="en">
@@ -121,24 +122,24 @@ bootstrap/
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap 101 Template</title>
+    <title>101 Modelos de Bootstrap </title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
+    <!-- Suporte do IE8 para tags HTML5 e media queries do HTML5 Shim e Respond.js -->
+    <!-- CUIDADO: Respond.js não trabalha se você visualizar a página via arquivo:// -->
+    <!--[Se IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <![finalse]-->
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <h1>Oi, mundo!</h1>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- jQuery (necessário para plugins JavaScript do Bootstrap) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- Incluir todos plugins compilados (abaixo), ou incluir arquivos individuais caso seja necessário -->
     <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
@@ -147,28 +148,28 @@ bootstrap/
 
 
 
-<!-- Examples
+<!-- Exemplos
 ================================================== -->
 <div class="bs-docs-section">
-  <h1 id="examples" class="page-header">Examples</h1>
+  <h1 id="examples" class="page-header">Exemplos</h1>
 
-  <p class="lead">Build on the basic template above with Bootstrap's many components. See also <a href="#customizing">Customizing Bootstrap</a> for tips on maintaining your own Bootstrap variants.</p>
+  <p class="lead">Construa sobre o modelo básico acima com muitos componentes do Bootstrap. Veja também <a href="#customizing"> Bootstrap Customizado</a> para obter dicas sobre a manutenção de suas próprias variantes do Bootstrap.</p>
 
-  <h3 id="examples-framework">Using the framework</h3>
+  <h3 id="examples-framework">Usando o framework</h3>
   <div class="row bs-examples">
     <div class="col-xs-6 col-md-4">
       <a class="thumbnail" href="../examples/starter-template/">
         <img src="../examples/screenshots/starter-template.jpg" alt="">
       </a>
-      <h4>Starter template</h4>
-      <p>Nothing but the basics: compiled CSS and JavaScript along with a container.</p>
+      <h4>Modelo inicial</h4>
+      <p>Nada mais que o básico: CSS e JavaScript compilado, juntamente com um contentor/recipiente.</p>
     </div>
     <div class="col-xs-6 col-md-4">
       <a class="thumbnail" href="../examples/theme/">
         <img src="../examples/screenshots/theme.jpg" alt="">
       </a>
-      <h4>Bootstrap theme</h4>
-      <p>Load the optional Bootstrap theme for a visually enhanced experience.</p>
+      <h4>Tema do Bootstrap</h4>
+      <p>Carregue o tema opicional Bootstrap para uma experiência visual aprimorada.</p>
     </div>
     <div class="clearfix visible-xs"></div>
 
@@ -176,42 +177,41 @@ bootstrap/
       <a class="thumbnail" href="../examples/grid/">
         <img src="../examples/screenshots/grid.jpg" alt="">
       </a>
-      <h4>Grids</h4>
-      <p>Multiple examples of grid layouts with all four tiers, nesting, and more.</p>
+      <h4>Grades</h4>
+      <p>Vários exemplos de layouts de grade com todos os quatro níveis, aninhados, e muito mais.</p>
     </div>
     <div class="col-xs-6 col-md-4">
       <a class="thumbnail" href="../examples/jumbotron/">
-        <img src="../examples/screenshots/jumbotron.jpg" alt="">
+        <img src="../examples/screenshots/jumbotron.jpg" alt="" >
       </a>
       <h4>Jumbotron</h4>
-      <p>Build around the jumbotron with a navbar and some basic grid columns.</p>
+      <p>Construa em volta do jumbotron com uma barra de navegação e algumas colunas básicas da grade.</p>
     </div>
     <div class="clearfix visible-xs"></div>
-
     <div class="col-xs-6 col-md-4">
       <a class="thumbnail" href="../examples/jumbotron-narrow/">
         <img src="../examples/screenshots/jumbotron-narrow.jpg" alt="">
       </a>
-      <h4>Narrow jumbotron</h4>
+      <h4>Jumbotron limitado/restrito</h4>
       <p>Build a more custom page by narrowing the default container and jumbotron.</p>
     </div>
   </div>
 
-  <h3 id="examples-navbars">Navbars in action</h3>
+  <h3 id="examples-navbars">Barras de navegação em ação</h3>
   <div class="row bs-examples">
     <div class="col-xs-6 col-md-4">
       <a class="thumbnail" href="../examples/navbar/">
         <img src="../examples/screenshots/navbar.jpg" alt="">
       </a>
-      <h4>Navbar</h4>
-      <p>Super basic template that includes the navbar along with some additional content.</p>
+      <h4>Barra de navegação</h4>
+      <p>Modelo super básico que inclui a barra de navegação juntamente com alguma conteúdo adicional.</p>
     </div>
     <div class="col-xs-6 col-md-4">
       <a class="thumbnail" href="../examples/navbar-static-top/">
         <img src="../examples/screenshots/navbar-static.jpg" alt="">
       </a>
-      <h4>Static top navbar</h4>
-      <p>Super basic template with a static top navbar along with some additional content.</p>
+      <h4>Barra de navegação superior estática</h4>
+      <p>Modelo super básico com barra de navegação superior estática juntamente com alguma conteúdo adicional.</p>
     </div>
     <div class="clearfix visible-xs"></div>
 
@@ -219,26 +219,26 @@ bootstrap/
       <a class="thumbnail" href="../examples/navbar-fixed-top/">
         <img src="../examples/screenshots/navbar-fixed.jpg" alt="">
       </a>
-      <h4>Fixed navbar</h4>
-      <p>Super basic template with a fixed top navbar along with some additional content.</p>
+      <h4>Barra de navegação fixa</h4>
+      <p>Modelo super básico com barra de navegação superior fixa juntamente com alguma conteúdo adicional.</p>
     </div>
   </div>
 
-  <h3 id="examples-custom">Custom components</h3>
+  <h3 id="examples-custom">Componentes customizados</h3>
   <div class="row bs-examples">
     <div class="col-xs-6 col-md-4">
       <a class="thumbnail" href="../examples/cover/">
         <img src="../examples/screenshots/cover.jpg" alt="">
       </a>
-      <h4>Cover</h4>
-      <p>A one-page template for building simple and beautiful home pages.</p>
+      <h4>Capa</h4>
+      <p>Modelo de uma página para a construção de páginas inicias simples e bonitas.</p>
     </div>
     <div class="col-xs-6 col-md-4">
       <a class="thumbnail" href="../examples/carousel/">
         <img src="../examples/screenshots/carousel.jpg" alt="">
       </a>
-      <h4>Carousel</h4>
-      <p>Customize the navbar and carousel, then add some new components.</p>
+      <h4>Carrossel</h4>
+      <p>Costumize a barra de navegação e o carrossel em seguida adicione alguns novos componentes.</p>
     </div>
     <div class="clearfix visible-xs"></div>
 
@@ -247,14 +247,14 @@ bootstrap/
         <img src="../examples/screenshots/blog.jpg" alt="">
       </a>
       <h4>Blog</h4>
-      <p>Simple two-column blog layout with custom navigation, header, and type.</p>
+      <p>Layout do blog simples de duas colunas com navegação costumizada, cabeçalho e tipo.</p>
     </div>
     <div class="col-xs-6 col-md-4">
       <a class="thumbnail" href="../examples/dashboard/">
         <img src="../examples/screenshots/dashboard.jpg" alt="">
       </a>
-      <h4>Dashboard</h4>
-      <p>Basic structure for a admin dashboard with fixed sidebar and navbar.</p>
+      <h4>Painel de controle</h4>
+      <p>Estrutura básica para um painel de controle com barra lateral e barra de navegaçã fixa.</p>
     </div>
     <div class="clearfix visible-xs"></div>
 
@@ -262,15 +262,15 @@ bootstrap/
       <a class="thumbnail" href="../examples/signin/">
         <img src="../examples/screenshots/sign-in.jpg" alt="">
       </a>
-      <h4>Sign-in page</h4>
-      <p>Custom form layout and design for a simple sign in form.</p>
+      <h4>Cadastre-se na página</h4>
+      <p>Layout de formulário customizado e design para um cadastro em formulário simples.</p>
     </div>
     <div class="col-xs-6 col-md-4">
       <a class="thumbnail" href="../examples/justified-nav/">
         <img src="../examples/screenshots/justified-nav.jpg" alt="">
       </a>
-      <h4>Justified nav</h4>
-      <p>Create a custom navbar with justified links. Heads up! <a href="../components/#nav-justified">Not too WebKit friendly.</a></p>
+      <h4>Barra de navegação justificada</h4>
+      <p>Crie uma barra de navegação customizada com links justificados. Atenção! <a href="../components/#nav-justified">WebKit não muito amigável.</a></p>
     </div>
     <div class="clearfix visible-xs"></div>
 
@@ -278,40 +278,40 @@ bootstrap/
       <a class="thumbnail" href="../examples/sticky-footer/">
         <img src="../examples/screenshots/sticky-footer.jpg" alt="">
       </a>
-      <h4>Sticky footer</h4>
-      <p>Attach a footer to the bottom of the viewport when the content is shorter than it.</p>
+      <h4>Rodapé fixo</h4>
+      <p>Acrescente um rodapé para a parte inferior da janela de exibição em que o conteúdo é mais curto do que ele.</p>
     </div>
     <div class="col-xs-6 col-md-4">
       <a class="thumbnail" href="../examples/sticky-footer-navbar/">
         <img src="../examples/screenshots/sticky-footer-navbar.jpg" alt="">
       </a>
-      <h4>Sticky footer with navbar</h4>
-      <p>Attach a footer to the bottom of the viewport with a fixed navbar at the top.</p>
+      <h4>Rodapé fixo com barra de navegação</h4>
+      <p>Acrescente um rodapé para a parte inferior da janela com uma barra de navegação fixa no topo.</p>
     </div>
   </div>
 
-  <h3 id="examples-experiments">Experiments</h3>
+  <h3 id="examples-experiments">Experimentos</h3>
   <div class="row bs-examples">
     <div class="col-xs-6 col-md-4">
       <a class="thumbnail" href="../examples/non-responsive/">
         <img src="../examples/screenshots/non-responsive.jpg" alt="">
       </a>
-      <h4>Non-responsive Bootstrap</h4>
-      <p>Easily disable the responsiveness of Bootstrap <a href="#disable-responsive">per our docs</a>.</p>
+      <h4>Bootstrap não-responsivos </h4>
+      <p>Desative facilmente a capacidade de resposta do Bootstrap <a href="#disable-responsive">por nossos documentos</a>.</p>
     </div>
     <div class="col-xs-6 col-md-4">
       <a class="thumbnail" href="../examples/offcanvas/">
         <img src="../examples/screenshots/offcanvas.jpg" alt="">
       </a>
       <h4>Offcanvas</h4>
-      <p>Build a toggleable off-canvas navigation menu for use with Bootstrap.</p>
+      <p>Construa um menu de navegação toggleable off-canvas para uso com Bootstrap.</p>
     </div>
   </div>
 </div>
 
 
 
-<!-- Community
+<!-- Communidade
 ================================================== -->
 <div class="bs-docs-section">
   <h1 id="community" class="page-header">Community</h1>
