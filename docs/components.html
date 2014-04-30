@@ -1081,53 +1081,53 @@ lead: "Over a dozen reusable components built to provide iconography, dropdowns,
 <!-- Navs
 ================================================== -->
 <div class="bs-docs-section">
-  <h1 id="nav" class="page-header">Navs</h1>
+  <h1 id="nav" class="page-header">Menu de navegação</h1>
 
-  <p class="lead">Navs available in Bootstrap have shared markup, starting with the base <code>.nav</code> class, as well as shared states. Swap modifier classes to switch between each style.</p>
+  <p class="lead">Menus de navegação disponíveis no Bootstrap têm compartilhado marcação, começando com a classe base <code>.nav</code>, assim como estados compartilhados. Altere classes modificadoras para alternar entre cada estilo.</p>
 
-  <h2 id="nav-tabs">Tabs</h2>
-  <p>Note the <code>.nav-tabs</code> class requires the <code>.nav</code> base class.</p>
+  <h2 id="nav-tabs">Abas</h2>
+  <p>Note que a classe <code>.nav-tabs</code> requer a classe base <code>.nav</code>.</p>
   <div class="bs-example">
     <ul class="nav nav-tabs">
       <li class="active"><a href="#">Home</a></li>
-      <li><a href="#">Profile</a></li>
-      <li><a href="#">Messages</a></li>
+      <li><a href="#">Perfil</a></li>
+      <li><a href="#">Mensagens</a></li>
     </ul>
   </div>
 {% highlight html %}
 <ul class="nav nav-tabs">
   <li class="active"><a href="#">Home</a></li>
-  <li><a href="#">Profile</a></li>
-  <li><a href="#">Messages</a></li>
+  <li><a href="#">Perfil</a></li>
+  <li><a href="#">Mensagens</a></li>
 </ul>
 {% endhighlight %}
   <div class="bs-callout bs-callout-info">
-    <h4>Requires JavaScript tabs plugin</h4>
-    <p>For tabs with tabbable areas, you must use the <a href="../javascript/#tabs">tabs JavaScript plugin</a>.</p>
+    <h4>Requer o plugin Javascript tabs</h4>
+    <p>Para abas com áreas tabuláveis, você deve utilizar o  <a href="../javascript/#tabs">plugin Javascript tabs</a>.</p>
   </div>
 
   <h2 id="nav-pills">Pills</h2>
-  <p>Take that same HTML, but use <code>.nav-pills</code> instead:</p>
+  <p>Utilize aquele mesmo HTML, mas use <code>.nav-pills</code> ao invés de:</p>
   <div class="bs-example">
     <ul class="nav nav-pills">
       <li class="active"><a href="#">Home</a></li>
-      <li><a href="#">Profile</a></li>
-      <li><a href="#">Messages</a></li>
+      <li><a href="#">Perfil</a></li>
+      <li><a href="#">Mensagens</a></li>
     </ul>
   </div>
 {% highlight html %}
 <ul class="nav nav-pills">
   <li class="active"><a href="#">Home</a></li>
-  <li><a href="#">Profile</a></li>
-  <li><a href="#">Messages</a></li>
+  <li><a href="#">Perfil</a></li>
+  <li><a href="#">Mensagens</a></li>
 </ul>
 {% endhighlight %}
-  <p>Pills are also vertically stackable. Just add <code>.nav-stacked</code>.</p>
+  <p>Menu em Pills também podem ser empilhados verticalmente. Basta adicionar <code>.nav-stacked</code>.</p>
   <div class="bs-example">
     <ul class="nav nav-pills nav-stacked" style="max-width: 300px;">
       <li class="active"><a href="#">Home</a></li>
-      <li><a href="#">Profile</a></li>
-      <li><a href="#">Messages</a></li>
+      <li><a href="#">Perfil</a></li>
+      <li><a href="#">Mensagens</a></li>
     </ul>
   </div>
 {% highlight html %}
@@ -1137,23 +1137,23 @@ lead: "Over a dozen reusable components built to provide iconography, dropdowns,
 {% endhighlight %}
 
 
-  <h2 id="nav-justified">Justified</h2>
-  <p>Easily make tabs or pills equal widths of their parent at screens wider than 768px with <code>.nav-justified</code>. On smaller screens, the nav links are stacked.</p>
+  <h2 id="nav-justified">Justificado</h2>
+  <p>Facilmente faça menu em abas ou em pills com largura igual a de seus pais em telas mais largas que 768px com <code>.nav-justified</code>. Em telas menores, os links de navegação são empilhados.</p>
   <div class="bs-callout bs-callout-warning">
-    <h4>Safari and responsive justified navs</h4>
-    <p>As of v7.0.1, Safari exhibits a bug in which resizing your browser horizontally causes rendering errors in the justified nav that are cleared upon refreshing. This bug is also shown in the <a href="../examples/justified-nav/">justified nav example</a>.</p>
+    <h4>Safari e menus de navegação justificados responsivos</h4>
+    <p>Como na v7.0.1, Safari apresenta um bug que ao redimensionar seu browser horizontalmente causa erros de renderização nos menus de navegação justificados que é resolvido após a atualização da página. Este bug também é mostrado no <a href="../examples/justified-nav/">exemplo de menu de navegação justificado</a>.</p>
   </div>
   <div class="bs-example">
     <ul class="nav nav-tabs nav-justified">
       <li class="active"><a href="#">Home</a></li>
-      <li><a href="#">Profile</a></li>
-      <li><a href="#">Messages</a></li>
+      <li><a href="#">Perfil</a></li>
+      <li><a href="#">Mensagens</a></li>
     </ul>
     <br>
     <ul class="nav nav-pills nav-justified">
       <li class="active"><a href="#">Home</a></li>
-      <li><a href="#">Profile</a></li>
-      <li><a href="#">Messages</a></li>
+      <li><a href="#">Perfil</a></li>
+      <li><a href="#">Mensagens</a></li>
     </ul>
   </div>
 {% highlight html %}
@@ -1166,48 +1166,48 @@ lead: "Over a dozen reusable components built to provide iconography, dropdowns,
 {% endhighlight %}
 
 
-  <h2 id="nav-disabled-links">Disabled links</h2>
-  <p>For any nav component (tabs or pills), add <code>.disabled</code> for <strong>gray links and no hover effects</strong>.</p>
+  <h2 id="nav-disabled-links">Links desabilitados</h2>
+  <p>para qualquer componente do menu de navegação (tabs ou pills), adicione <code>.disabled</code> para <strong>links com cor cinza e sem efeitos hover</strong>.</p>
 
   <div class="bs-callout bs-callout-warning">
-    <h4>Link functionality not impacted</h4>
-    <p>This class will only change the <code>&lt;a&gt;</code>'s appearance, not its functionality. Use custom JavaScript to disable links here.</p>
+    <h4>Funcionalidade link não inpactada</h4>
+    <p>Essa classe irá somente alterar a aparência de <code>&lt;a&gt;</code>, e não a sua funcionalidade. Utilize Javascript customizado para disabilitar os links.</p>
   </div>
 
   <div class="bs-example">
     <ul class="nav nav-pills">
-      <li><a href="#">Clickable link</a></li>
-      <li><a href="#">Clickable link</a></li>
-      <li class="disabled"><a href="#">Disabled link</a></li>
+      <li><a href="#">Link clicável</a></li>
+      <li><a href="#">Link clicável</a></li>
+      <li class="disabled"><a href="#">Link desabilitado</a></li>
     </ul>
   </div>
 {% highlight html %}
 <ul class="nav nav-pills">
   ...
-  <li class="disabled"><a href="#">Disabled link</a></li>
+  <li class="disabled"><a href="#">Link desabilitado</a></li>
   ...
 </ul>
 {% endhighlight %}
 
 
-  <h2 id="nav-dropdowns">Using dropdowns</h2>
-  <p>Add dropdown menus with a little extra HTML and the <a href="../javascript/#dropdowns">dropdowns JavaScript plugin</a>.</p>
+  <h2 id="nav-dropdowns">Utilizando dropdowns</h2>
+  <p>Adicione menus dropdown com um pouco de HTML extra e o <a href="../javascript/#dropdowns">plugin Javascript dropdown</a>.</p>
 
-  <h3>Tabs with dropdowns</h3>
+  <h3>Abas com dropdown</h3>
   <div class="bs-example">
     <ul class="nav nav-tabs">
       <li class="active"><a href="#">Home</a></li>
-      <li><a href="#">Help</a></li>
+      <li><a href="#">Ajuda</a></li>
       <li class="dropdown">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">
           Dropdown <span class="caret"></span>
         </a>
         <ul class="dropdown-menu" role="menu">
-          <li><a href="#">Action</a></li>
-          <li><a href="#">Another action</a></li>
-          <li><a href="#">Something else here</a></li>
+          <li><a href="#">Ação</a></li>
+          <li><a href="#">Outra ação</a></li>
+          <li><a href="#">Alguma outra ação aqui</a></li>
           <li class="divider"></li>
-          <li><a href="#">Separated link</a></li>
+          <li><a href="#">Link separado</a></li>
         </ul>
       </li>
     </ul>
@@ -1227,21 +1227,21 @@ lead: "Over a dozen reusable components built to provide iconography, dropdowns,
 </ul>
 {% endhighlight %}
 
-  <h3>Pills with dropdowns</h3>
+  <h3>Pills com dropdowns</h3>
   <div class="bs-example">
     <ul class="nav nav-pills">
       <li class="active"><a href="#">Home</a></li>
-      <li><a href="#">Help</a></li>
+      <li><a href="#">Ajuda</a></li>
       <li class="dropdown">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">
           Dropdown <span class="caret"></span>
         </a>
         <ul class="dropdown-menu" role="menu">
-          <li><a href="#">Action</a></li>
-          <li><a href="#">Another action</a></li>
-          <li><a href="#">Something else here</a></li>
+          <li><a href="#">Ação</a></li>
+          <li><a href="#">Outra ação</a></li>
+          <li><a href="#">Alguma outra coisa aqui</a></li>
           <li class="divider"></li>
-          <li><a href="#">Separated link</a></li>
+          <li><a href="#">Link separado</a></li>
         </ul>
       </li>
     </ul>
@@ -1267,23 +1267,23 @@ lead: "Over a dozen reusable components built to provide iconography, dropdowns,
 <!-- Navbar
 ================================================== -->
 <div class="bs-docs-section">
-  <h1 id="navbar" class="page-header">Navbar</h1>
+  <h1 id="navbar" class="page-header">Barra de navegação</h1>
 
-  <h2 id="navbar-default">Default navbar</h2>
-  <p>Navbars are responsive meta components that serve as navigation headers for your application or site. They begin collapsed (and are toggleable) in mobile views and become horizontal as the available viewport width increases.</p>
+  <h2 id="navbar-default">Barra de navegação padrão</h2>
+  <p>Barras de navegação são meta componentes responsívos que servem como cabeçalhos de navegação para sua aplicação ou site. Eles iniciam escondidos (e são podem ser alternados) em visualizações em dispositivos móveis e se tornam horizontais de acordo com o aumento da largura do espaço de de visualização disponível.</p>
 
   <div class="bs-callout bs-callout-warning" id="callout-navbar-overflow">
-    <h4>Overflowing content</h4>
-    <p>Since Bootstrap doesn't know how much space the content in your navbar needs, you might run into issues with content wrapping into a second row. To resolve this, you can:</p>
+    <h4>Sobrecarregando conteúdo</h4>
+    <p>Como Bootstrap não sabe a quantidade de espaço que o conteúdo em sua barra de navegação vai precisar, você poderá encontrar alguns problemas com o encapsulamento de conteúdo em uma segunda linha. Para resolver isso, você pode:</p>
     <ol type="a">
-      <li>Reduce the amount or width of navbar items.</li>
-      <li>Hide certain navbar items at certain screen sizes using <a href="../css/#responsive-utilities">responsive utility classes</a>.</li>
-      <li>Change the point at which your navbar switches between collapsed and horizontal mode. Customize the <code>@grid-float-breakpoint</code> variable or add your own media query.</li>
+      <li>Reduzir a quantidade ou largura dos item da barra de navegação.</li>
+      <li>Esconder certos itens do barra de navegação em certos tamanhos de tela utilizando <a href="../css/#responsive-utilities">classes utilitárias responsivas</a>.</li>
+      <li>Altere o momento em que sua barra de navegação alterna entre escondida e modo horizontal. Customize a variável <code>@grid-float-breakpoint</code> ou adicione sua própria media query.</li>
     </ol>
   </div>
   <div class="bs-callout bs-callout-danger">
-    <h4>Requires JavaScript</h4>
-    <p>If JavaScript is disabled and the viewport is narrow enough that the navbar collapses, it will be impossible to expand the navbar and view the content within the <code>.navbar-collapse</code>.</p>
+    <h4>Requer JavaScript</h4>
+    <p>Se o Javascript está desabilitado e a área de visualização é limitada o bastante para que a barra de navegação se esconda, será impossível expandir a barra de navegação e visualizar seu conteúdo com <code>.navbar-collapse</code>.</p>
   </div>
 
   <div class="bs-example">
@@ -1292,12 +1292,12 @@ lead: "Over a dozen reusable components built to provide iconography, dropdowns,
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
+            <span class="sr-only">Alternador de navegação</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Brand</a>
+          <a class="navbar-brand" href="#">Marca</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -1308,13 +1308,13 @@ lead: "Over a dozen reusable components built to provide iconography, dropdowns,
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
               <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
+                <li><a href="#">Ação</a></li>
+                <li><a href="#">Outra ação</a></li>
+                <li><a href="#">Alguma outra coisa aqui</a></li>
                 <li class="divider"></li>
-                <li><a href="#">Separated link</a></li>
+                <li><a href="#">Link separado</a></li>
                 <li class="divider"></li>
-                <li><a href="#">One more separated link</a></li>
+                <li><a href="#">Mais um link separado</a></li>
               </ul>
             </li>
           </ul>
@@ -1329,11 +1329,11 @@ lead: "Over a dozen reusable components built to provide iconography, dropdowns,
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
               <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
+                <li><a href="#">Ação</a></li>
+                <li><a href="#">Outra ação</a></li>
+                <li><a href="#">Alguma outra coisa aqui</a></li>
                 <li class="divider"></li>
-                <li><a href="#">Separated link</a></li>
+                <li><a href="#">Link separado</a></li>
               </ul>
             </li>
           </ul>
@@ -1347,12 +1347,12 @@ lead: "Over a dozen reusable components built to provide iconography, dropdowns,
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
+        <span class="sr-only">Alternador de navegação</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Brand</a>
+      <a class="navbar-brand" href="#">Marca</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -1363,13 +1363,13 @@ lead: "Over a dozen reusable components built to provide iconography, dropdowns,
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
+            <li><a href="#">Ação</a></li>
+            <li><a href="#">Outra ação</a></li>
+            <li><a href="#">Alguma outra coisa aqui</a></li>
             <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
+            <li><a href="#">Link separado</a></li>
             <li class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
+            <li><a href="#">Mais um Link separado</a></li>
           </ul>
         </li>
       </ul>
@@ -1377,18 +1377,18 @@ lead: "Over a dozen reusable components built to provide iconography, dropdowns,
         <div class="form-group">
           <input type="text" class="form-control" placeholder="Search">
         </div>
-        <button type="submit" class="btn btn-default">Submit</button>
+        <button type="submit" class="btn btn-default">Enviar</button>
       </form>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#">Link</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
+            <li><a href="#">Ação</a></li>
+            <li><a href="#">Outra ação</a></li>
+            <li><a href="#">Alguma outra coisa aqui</a></li>
             <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
+            <li><a href="#">Link separado</a></li>
           </ul>
         </li>
       </ul>
@@ -1398,37 +1398,37 @@ lead: "Over a dozen reusable components built to provide iconography, dropdowns,
 {% endhighlight %}
 
   <div class="bs-callout bs-callout-danger">
-    <h4>Plugin dependency</h4>
-    <p>The responsive navbar requires the <a href="../javascript/#collapse">collapse plugin</a> to be included in your version of Bootstrap.</p>
+    <h4>Dependência de plugin</h4>
+    <p>A barra de navegação responsiva necessita que o <a href="../javascript/#collapse">plugin collapse</a> esteja incluído na sua versão do Bootstrap.</p>
   </div>
 
   <div class="bs-callout bs-callout-warning">
-    <h4>Make navbars accessible</h4>
-    <p>Be sure to add a <code>role="navigation"</code> to every navbar to help with accessibility.</p>
+    <h4>Faça barras de navegação acessíveis</h4>
+    <p>Lembre de adicionar um <code>role="navigation"</code> para cada barra de navegação para ajudar com a acessibilidade.</p>
   </div>
 
 
-  <h2 id="navbar-forms">Forms</h2>
-  <p>Place form content within <code>.navbar-form</code> for proper vertical alignment and collapsed behavior in narrow viewports. Use the alignment options to decide where it resides within the navbar content.</p>
-  <p>As a heads up, <code>.navbar-form</code> shares much of its code with <code>.form-inline</code> via mixin. <strong class="text-danger">Some form controls, like input groups, may require fixed widths to be show up properly within a navbar.</strong></p>
+  <h2 id="navbar-forms">Formulários</h2>
+  <p>Coloque formulários de conteúdo com <code>.navbar-form</code> para um alinhamento vertical apropriado e comportamento escondido em áreas de visualização limitadas. Utilize as opções de alinhamento para decidir onde ele fica com o conteúdo da barra de navegação.</p>
+  <p>Um conselho, <code>.navbar-form</code> compartilha muito do seu código com <code>.form-inline</code> via mixin. <strong class="text-danger">Alguns controles de formulário, como grupo de campos, podem necessitar de alterações na largura para serem mostrados apropriadamente em uma barra de navegação.</strong></p>
   <div class="bs-example">
     <nav class="navbar navbar-default" role="navigation">
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
-            <span class="sr-only">Toggle navigation</span>
+            <span class="sr-only">Alternador de navegação</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Brand</a>
+          <a class="navbar-brand" href="#">Marca</a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
           <form class="navbar-form navbar-left" role="search">
             <div class="form-group">
               <input type="text" class="form-control" placeholder="Search">
             </div>
-            <button type="submit" class="btn btn-default">Submit</button>
+            <button type="submit" class="btn btn-default">Enviar</button>
           </form>
         </div>
       </div>
@@ -1439,119 +1439,119 @@ lead: "Over a dozen reusable components built to provide iconography, dropdowns,
   <div class="form-group">
     <input type="text" class="form-control" placeholder="Search">
   </div>
-  <button type="submit" class="btn btn-default">Submit</button>
+  <button type="submit" class="btn btn-default">Enviar</button>
 </form>
 {% endhighlight %}
 
   <div class="bs-callout bs-callout-warning">
-    <h4>Mobile device caveats</h4>
-    <p>There are some caveats regarding using form controls within fixed elements on mobile devices. <a href="../getting-started/#support-fixed-position-keyboards">See our browser support docs</a> for details.</p>
+    <h4>Ressalvas para dispositivos móveis</h4>
+    <p>Existem algumas ressalvas na utilização de controles de formulário com elementos alterados em dispositivos móveis. <a href="../getting-started/#support-fixed-position-keyboards">Veja a nossa documentação de suporte de navegadores</a> para mais detalhes.</p>
   </div>
 
   <div class="bs-callout bs-callout-warning">
-    <h4>Always add labels</h4>
-    <p>Screen readers will have trouble with your forms if you don't include a label for every input. For these inline navbar forms, you can hide the labels using the <code>.sr-only</code> class.</p>
+    <h4>Sempre adicione labels</h4>
+    <p>Leitores de tela sempre encontrarão problemas com seus formulários se você não incluir um label para cada campo. Para formulários em linha, você pode esconder os labels utilizando a classe <code>.sr-only</code>.</p>
   </div>
 
 
-  <h2 id="navbar-buttons">Buttons</h2>
-  <p>Add the <code>.navbar-btn</code> class to <code>&lt;button&gt;</code> elements not residing in a <code>&lt;form&gt;</code> to vertically center them in the navbar.</p>
+  <h2 id="navbar-buttons">Botões</h2>
+  <p>Adicione a classe <code>.navbar-btn</code> e elementos <code>&lt;button&gt;</code> que não estão dentro de um <code>&lt;form&gt;</code> para centralizá-los verticalmente em uma barra de navegação.</p>
   <div class="bs-example">
     <nav class="navbar navbar-default" role="navigation">
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-3">
-            <span class="sr-only">Toggle navigation</span>
+            <span class="sr-only">Alternador de navegação</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Brand</a>
+          <a class="navbar-brand" href="#">Marca</a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-3">
-          <button type="button" class="btn btn-default navbar-btn">Sign in</button>
+          <button type="button" class="btn btn-default navbar-btn">Entrar</button>
         </div>
       </div>
     </nav>
   </div>
 {% highlight html %}
-<button type="button" class="btn btn-default navbar-btn">Sign in</button>
+<button type="button" class="btn btn-default navbar-btn">Entrar</button>
 {% endhighlight %}
 
   <div class="bs-callout bs-callout-warning">
-    <h4>Context-specific usage</h4>
-    <p>Like the standard <a href="../css/#buttons">button classes</a>, <code>.navbar-btn</code> can be used on <code>&lt;a&gt;</code> and <code>&lt;input&gt;</code> elements. However, neither <code>.navbar-btn</code> nor the standard button classes should be used on <code>&lt;a&gt;</code> elements within <code>.navbar-nav</code>.</p>
+    <h4>Utilização em contexto específico</h4>
+    <p>Assim como o padrão <a href="../css/#buttons">classes de botão</a>, <code>.navbar-btn</code> podem ser utilizadas em elementos <code>&lt;a&gt;</code> e <code>&lt;input&gt;</code>. No entanto, nem <code>.navbar-btn</code> nem as classes padrão de botão devem ser utilizadas em elementos <code>&lt;a&gt;</code> com <code>.navbar-nav</code>.</p>
   </div>
 
-  <h2 id="navbar-text">Text</h2>
-  <p>Wrap strings of text in an element with <code>.navbar-text</code>, usually on a <code>&lt;p&gt;</code> tag for proper leading and color.</p>
+  <h2 id="navbar-text">Texto</h2>
+  <p>Encapsule strings de texto em um elemento com <code>.navbar-text</code>, geralmente uma tag <code>&lt;p&gt;</code> para controle e cor.</p>
   <div class="bs-example">
     <nav class="navbar navbar-default" role="navigation">
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-4">
-            <span class="sr-only">Toggle navigation</span>
+            <span class="sr-only">Alternador de navegação</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Brand</a>
+          <a class="navbar-brand" href="#">Marca</a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-4">
-          <p class="navbar-text">Signed in as Mark Otto</p>
+          <p class="navbar-text">Logado como Mark Otto</p>
         </div>
       </div>
     </nav>
   </div>
 {% highlight html %}
-<p class="navbar-text">Signed in as Mark Otto</p>
+<p class="navbar-text">Logado como Mark Otto</p>
 {% endhighlight %}
 
 
-  <h2 id="navbar-links">Non-nav links</h2>
-  <p>For folks using standard links that are not within the regular navbar navigation component, use the <code>.navbar-link</code> class to add the proper colors for the default and inverse navbar options.</p>
+  <h2 id="navbar-links">Links não navegáveis</h2>
+  <p>Para pessoas utilizando links padrão que não estão com o componente de barra de navegação regular, utilize a classe <code>.navbar-link</code> para adicionar as cores apropriadas para as opções da barra de navegação padrão e inverse.</p>
   <div class="bs-example">
     <nav class="navbar navbar-default" role="navigation">
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-5">
-            <span class="sr-only">Toggle navigation</span>
+            <span class="sr-only">Alternador de navegação</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Brand</a>
+          <a class="navbar-brand" href="#">Marca</a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-5">
-          <p class="navbar-text navbar-right">Signed in as <a href="#" class="navbar-link">Mark Otto</a></p>
+          <p class="navbar-text navbar-right">Logado como <a href="#" class="navbar-link">Mark Otto</a></p>
         </div>
       </div>
     </nav>
   </div>
 {% highlight html %}
-<p class="navbar-text navbar-right">Signed in as <a href="#" class="navbar-link">Mark Otto</a></p>
+<p class="navbar-text navbar-right">Logado como <a href="#" class="navbar-link">Mark Otto</a></p>
 {% endhighlight %}
 
 
-  <h2 id="navbar-component-alignment">Component alignment</h2>
-  <p>Align nav links, forms, buttons, or text, using the <code>.navbar-left</code> or <code>.navbar-right</code> utility classes. Both classes will add a CSS float in the specified direction. For example, to align nav links, put them in a separate <code>&lt;ul&gt;</code> with the respective utility class applied.</p>
-  <p>These classes are mixin-ed versions of <code>.pull-left</code> and <code>.pull-right</code>, but they're scoped to media queries for easier handling of navbar components across device sizes.</p>
+  <h2 id="navbar-component-alignment">Componente de alinhamento</h2>
+  <p>Alinhe links, formulários, botões ou text na barra de navegação, utilizando as classes utilitárias <code>.navbar-left</code> ou <code>.navbar-right</code>. Ambas as classe adicionarão um CSS float na direção especificada. Por exemplo, para alinhar links na barra de navegação, coloque eles em um <code>&lt;ul&gt;</code> separado com as respectivas classes utilitárias separadas.</p>
+  <p>Estas classes são versões mixin-ed de <code>.pull-left</code> e <code>.pull-right</code>, mas elas possuem media queris no seu escopo para facilitar a manipulação de componentes de barras de navegação entre os dispositivos.</p>
 
 
-  <h2 id="navbar-fixed-top">Fixed to top</h2>
-  <p>Add <code>.navbar-fixed-top</code> and include a <code>.container</code> or <code>.container-fluid</code> to center and pad navbar content.</p>
+  <h2 id="navbar-fixed-top">Fixar no topo</h2>
+  <p>Adicione <code>.navbar-fixed-top</code> e inclua um <code>.container</code> ou <code>.container-fluid</code> para centralizar e preencher o conteúdo de uma barra de navegação.</p>
   <div class="bs-example bs-navbar-top-example">
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
       <!-- We use the fluid option here to avoid overriding the fixed width of a normal container within the narrow content columns. -->
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-6">
-            <span class="sr-only">Toggle navigation</span>
+            <span class="sr-only">Alternador de navegação</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Brand</a>
+          <a class="navbar-brand" href="#">Marca</a>
         </div>
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-6">
@@ -1573,29 +1573,29 @@ lead: "Over a dozen reusable components built to provide iconography, dropdowns,
 {% endhighlight %}
 
   <div class="bs-callout bs-callout-danger">
-    <h4>Body padding required</h4>
-    <p>The fixed navbar will overlay your other content, unless you add <code>padding</code> to the top of the <code>&lt;body&gt;</code>. Try out your own values or use our snippet below. Tip: By default, the navbar is 50px high.</p>
+    <h4>Requer padding no body</h4>
+    <p>A alteração da barra de navegação vai sobrepor seu outro conteúdo, a menos que você adicione <code>padding</code> no topo do <code>&lt;body&gt;</code>. Teste com seus próprios valores ou utilize nosso trecho de código abaixo. Dica: Por padrão, a barra de navegação possui 50px de altura.</p>
 {% highlight scss %}
 body { padding-top: 70px; }
 {% endhighlight %}
-    <p>Make sure to include this <strong>after</strong> the core Bootstrap CSS.</p>
+    <p>Lembre de incluir isso <strong>depois</strong> ao CSS do Bootstrap.</p>
   </div>
 
 
-  <h2 id="navbar-fixed-bottom">Fixed to bottom</h2>
-  <p>Add <code>.navbar-fixed-bottom</code> and include a <code>.container</code> or <code>.container-fluid</code> to center and pad navbar content.</p>
+  <h2 id="navbar-fixed-bottom">Fixar na base</h2>
+  <p>Adicione <code>.navbar-fixed-bottom</code> e inclua um <code>.container</code> ou <code>.container-fluid</code> para centralizar e preencher o conteúdo de uma barra de navegação .</p>
   <div class="bs-example bs-navbar-bottom-example">
     <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
       <!-- We use the fluid option here to avoid overriding the fixed width of a normal container within the narrow content columns. -->
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-7">
-            <span class="sr-only">Toggle navigation</span>
+            <span class="sr-only">Alternador de navegação</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Brand</a>
+          <a class="navbar-brand" href="#">Marca</a>
         </div>
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-7">
@@ -1617,30 +1617,30 @@ body { padding-top: 70px; }
 {% endhighlight %}
 
   <div class="bs-callout bs-callout-danger">
-    <h4>Body padding required</h4>
-    <p>The fixed navbar will overlay your other content, unless you add <code>padding</code> to the bottom of the <code>&lt;body&gt;</code>. Try out your own values or use our snippet below. Tip: By default, the navbar is 50px high.</p>
+    <h4>Requer padding no body</h4>
+    <p>A alteração da barra de navegação vai sobrepor seu outro conteúdo, a menos que você adicione <code>padding</code> no topo do <code>&lt;body&gt;</code>. Teste com seus próprios valores ou utilize nosso trecho de código abaixo. Dica: Por padrão, a barra de navegação possui 50px de altura.</p>
 {% highlight scss %}
 body { padding-bottom: 70px; }
 {% endhighlight %}
-    <p>Make sure to include this <strong>after</strong> the core Bootstrap CSS.</p>
+    <p>Lembre de incluir isso <strong>depois</strong> ao CSS do Bootstrap.</p>
   </div>
 
 
-  <h2 id="navbar-static-top">Static top</h2>
-  <p>Create a full-width navbar that scrolls away with the page by adding <code>.navbar-static-top</code> and include a <code>.container</code> or <code>.container-fluid</code> to center and pad navbar content.</p>
-  <p>Unlike the <code>.navbar-fixed-*</code> classes, you do not need to change any padding on the <code>body</code>.</p>
+  <h2 id="navbar-static-top">Topo estático</h2>
+  <p>Crie uma barra de navegação com largura completa que rola com a página através da adição de <code>.navbar-static-top</code> e inclusão de um <code>.container</code> ou <code>.container-fluid</code> para centralizar e preencher o conteúdo de uma barra de navegação.</p>
+  <p>Diferentemente das classes <code>.navbar-fixed-*</code>, voce não precisa alterar algum padding no <code>body</code>.</p>
   <div class="bs-example bs-navbar-top-example">
     <nav class="navbar navbar-default navbar-static-top" role="navigation">
       <!-- We use the fluid option here to avoid overriding the fixed width of a normal container within the narrow content columns. -->
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-8">
-            <span class="sr-only">Toggle navigation</span>
+            <span class="sr-only">Alternador de navegação</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Brand</a>
+          <a class="navbar-brand" href="#">Marca</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -1663,20 +1663,20 @@ body { padding-bottom: 70px; }
 {% endhighlight %}
 
 
-  <h2 id="navbar-inverted">Inverted navbar</h2>
-  <p>Modify the look of the navbar by adding <code>.navbar-inverse</code>.</p>
+  <h2 id="navbar-inverted">Barra de navegação invertidas</h2>
+  <p>Modifique a aparência da barra de navegação através da adição de <code>.navbar-inverse</code>.</p>
   <div class="bs-example">
     <nav class="navbar navbar-inverse" role="navigation">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-9">
-            <span class="sr-only">Toggle navigation</span>
+            <span class="sr-only">Alternador de navegação</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Brand</a>
+          <a class="navbar-brand" href="#">Marca</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
