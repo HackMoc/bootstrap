@@ -1702,29 +1702,29 @@ body { padding-bottom: 70px; }
 <!-- Breadcrumbs
 ================================================== -->
 <div class="bs-docs-section">
-  <h1 id="breadcrumbs" class="page-header">Breadcrumbs</h1>
+  <h1 id="breadcrumbs" class="page-header">Migalhas de Pão</h1>
 
-  <p class="lead">Indicate the current page's location within a navigational hierarchy.</p>
-  <p>Separators are automatically added in CSS through <code>:before</code> and <code>content</code>.</p>
+  <p class="lead">Indica a localização da página atual com uma hierarquia de navegação.</p>
+  <p>Separadores são automaticamente adicionados ao CSS através de <code>:before</code> e <code>content</code>.</p>
   <div class="bs-example">
     <ol class="breadcrumb">
       <li class="active">Home</li>
     </ol>
     <ol class="breadcrumb">
       <li><a href="#">Home</a></li>
-      <li class="active">Library</li>
+      <li class="active">Biblioteca</li>
     </ol>
     <ol class="breadcrumb" style="margin-bottom: 5px;">
       <li><a href="#">Home</a></li>
-      <li><a href="#">Library</a></li>
-      <li class="active">Data</li>
+      <li><a href="#">Biblioteca</a></li>
+      <li class="active">Dados</li>
     </ol>
   </div>
 {% highlight html %}
 <ol class="breadcrumb">
   <li><a href="#">Home</a></li>
-  <li><a href="#">Library</a></li>
-  <li class="active">Data</li>
+  <li><a href="#">Biblioteca</a></li>
+  <li class="active">Dados</li>
 </ol>
 {% endhighlight %}
 </div>
@@ -1734,12 +1734,13 @@ body { padding-bottom: 70px; }
 <!-- Pagination
 ================================================== -->
 <div class="bs-docs-section">
-  <h1 id="pagination" class="page-header">Pagination</h1>
+  <h1 id="pagination" class="page-header">Paginação</h1>
 
   <p class="lead">Provide pagination links for your site or app with the multi-page pagination component, or the simpler <a href="#pagination-pager">pager alternative</a>.</p>
+  <p class="lead">Fornece links de paginação para seu site ou aplicativo com o componente de paginação multi-page, ou simplificador <a href="#pagination-pager">pager alternative</a>.</p>
 
-  <h2 id="pagination-default">Default pagination</h2>
-  <p>Simple pagination inspired by Rdio, great for apps and search results. The large block is hard to miss, easily scalable, and provides large click areas.</p>
+  <h2 id="pagination-default">Paginação padrão</h2>
+  <p>Paginação simples inspirada em Rdio, ótimo para aplicativos e resultados de busca. O bloco grande é difício de esquecer, facilmente escalável, e fornece grandes áreas de clique.</p>
   <div class="bs-example">
     <ul class="pagination">
       <li><a href="#">&laquo;</a></li>
@@ -1763,12 +1764,12 @@ body { padding-bottom: 70px; }
 </ul>
 {% endhighlight %}
 
-  <h3>Disabled and active states</h3>
-  <p>Links are customizable for different circumstances. Use <code>.disabled</code> for unclickable links and <code>.active</code> to indicate the current page.</p>
+  <h3>Estados ativos e desabilitados</h3>
+  <p>Links são customizáveis para diferentes circunstâncias. Utilize <code>.disabled</code> para links não-clicáveis e <code>.active</code> para indicar a página atual.</p>
   <div class="bs-example">
     <ul class="pagination">
       <li class="disabled"><a href="#">&laquo;</a></li>
-      <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+      <li class="active"><a href="#">1 <span class="sr-only">(atual)</span></a></li>
       <li><a href="#">2</a></li>
       <li><a href="#">3</a></li>
       <li><a href="#">4</a></li>
@@ -1779,22 +1780,22 @@ body { padding-bottom: 70px; }
 {% highlight html %}
 <ul class="pagination">
   <li class="disabled"><a href="#">&laquo;</a></li>
-  <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+  <li class="active"><a href="#">1 <span class="sr-only">(atual)</span></a></li>
   ...
 </ul>
 {% endhighlight %}
-  <p>You can optionally swap out active or disabled anchors for <code>&lt;span&gt;</code> to remove click functionality while retaining intended styles.</p>
+  <p>Você pode, opcionalmente, ativar ou desabilitar âncoras para <code>&lt;span&gt;</code> remover a funcionalidade de clique enquanto retendo stilos desejados.</p>
 {% highlight html %}
 <ul class="pagination">
   <li class="disabled"><span>&laquo;</span></li>
-  <li class="active"><span>1 <span class="sr-only">(current)</span></span></li>
+  <li class="active"><span>1 <span class="sr-only">(atual)</span></span></li>
   ...
 </ul>
 {% endhighlight %}
 
 
-  <h3>Sizing</h3>
-  <p>Fancy larger or smaller pagination? Add <code>.pagination-lg</code> or <code>.pagination-sm</code> for additional sizes.</p>
+  <h3>Dimensionamento</h3>
+  <p>Elegante paginação maior ou menor? Adicione <code>.pagination-lg</code> ou <code>.pagination-sm</code> para tamanhos adicionais.</p>
   <div class="bs-example">
     <div>
       <ul class="pagination pagination-lg">
@@ -1837,52 +1838,52 @@ body { padding-bottom: 70px; }
 {% endhighlight %}
 
 
-  <h2 id="pagination-pager">Pager</h2>
-  <p>Quick previous and next links for simple pagination implementations with light markup and styles. It's great for simple sites like blogs or magazines.</p>
+  <h2 id="pagination-pager">Paginador</h2>
+  <p>Link rápidos para anterior e próxima em implementações simples de paginação com leves marcações e estilos. É ótimo para sites simples como blogs ou revistas.</p>
 
-  <h3>Default example</h3>
-  <p>By default, the pager centers links.</p>
+  <h3>Exemplo padrão</h3>
+  <p>Por padrão, o paginador centraliza os links.</p>
   <div class="bs-example">
     <ul class="pager">
-      <li><a href="#">Previous</a></li>
-      <li><a href="#">Next</a></li>
+      <li><a href="#">Anterior</a></li>
+      <li><a href="#">Próxima</a></li>
     </ul>
   </div>
 {% highlight html %}
 <ul class="pager">
-  <li><a href="#">Previous</a></li>
-  <li><a href="#">Next</a></li>
+  <li><a href="#">Anterior</a></li>
+  <li><a href="#">Próxima</a></li>
 </ul>
 {% endhighlight %}
 
-  <h3>Aligned links</h3>
-  <p>Alternatively, you can align each link to the sides:</p>
+  <h3>Links alinhados</h3>
+  <p>Alternativamente, você pode alinhar cada link nos lados:</p>
   <div class="bs-example">
     <ul class="pager">
-      <li class="previous"><a href="#">&larr; Older</a></li>
-      <li class="next"><a href="#">Newer &rarr;</a></li>
+      <li class="previous"><a href="#">&larr; Mais antigos</a></li>
+      <li class="next"><a href="#">Mais novos &rarr;</a></li>
     </ul>
   </div>
 {% highlight html %}
 <ul class="pager">
-  <li class="previous"><a href="#">&larr; Older</a></li>
-  <li class="next"><a href="#">Newer &rarr;</a></li>
+  <li class="previous"><a href="#">&larr; Mais antigos</a></li>
+  <li class="next"><a href="#">Mais novos &rarr;</a></li>
 </ul>
 {% endhighlight %}
 
 
-  <h3>Optional disabled state</h3>
-  <p>Pager links also use the general <code>.disabled</code> utility class from the pagination.</p>
+  <h3>Estado desabilitado opcional</h3>
+  <p>Links paginadores também utilizam a classe utilitária <code>.disabled</code> da paginação.</p>
   <div class="bs-example">
     <ul class="pager">
-      <li class="previous disabled"><a href="#">&larr; Older</a></li>
-      <li class="next"><a href="#">Newer &rarr;</a></li>
+      <li class="previous disabled"><a href="#">&larr; Mais antigos</a></li>
+      <li class="next"><a href="#">Mais novos &rarr;</a></li>
     </ul>
   </div>
 {% highlight html %}
 <ul class="pager">
-  <li class="previous disabled"><a href="#">&larr; Older</a></li>
-  <li class="next"><a href="#">Newer &rarr;</a></li>
+  <li class="previous disabled"><a href="#">&larr; Mais antigos</a></li>
+  <li class="next"><a href="#">Mais novos &rarr;</a></li>
 </ul>
 {% endhighlight %}
 </div>
@@ -1892,23 +1893,23 @@ body { padding-bottom: 70px; }
 <!-- Labels
 ================================================== -->
 <div class="bs-docs-section">
-  <h1 id="labels" class="page-header">Labels</h1>
+  <h1 id="labels" class="page-header">Rótulos</h1>
 
-  <h3>Example</h3>
+  <h3>Exemplo</h3>
   <div class="bs-example">
-    <h1>Example heading <span class="label label-default">New</span></h1>
-    <h2>Example heading <span class="label label-default">New</span></h2>
-    <h3>Example heading <span class="label label-default">New</span></h3>
-    <h4>Example heading <span class="label label-default">New</span></h4>
-    <h5>Example heading <span class="label label-default">New</span></h5>
-    <h6>Example heading <span class="label label-default">New</span></h6>
+    <h1>Exemplo de cabeçalho <span class="label label-default">Novo</span></h1>
+    <h2>Exemplo de cabeçalho <span class="label label-default">Novo</span></h2>
+    <h3>Exemplo de cabeçalho <span class="label label-default">Novo</span></h3>
+    <h4>Exemplo de cabeçalho <span class="label label-default">Novo</span></h4>
+    <h5>Exemplo de cabeçalho <span class="label label-default">Novo</span></h4>
+    <h6>Exemplo de cabeçalho <span class="label label-default">Novo</span></h6>
   </div>
 {% highlight html %}
-<h3>Example heading <span class="label label-default">New</span></h3>
+<h3>Exemplo de cabeçalho <span class="label label-default">Novo</span></h3>
 {% endhighlight %}
 
-  <h3>Available variations</h3>
-  <p>Add any of the below mentioned modifier classes to change the appearance of a label.</p>
+  <h3>Variações disponíveis</h3>
+  <p>Adicione alguma das classes modificadoras mencionadas abaixo para mudar a aparência de um rótulo.</p>
   <div class="bs-example">
     <span class="label label-default">Default</span>
     <span class="label label-primary">Primary</span>
