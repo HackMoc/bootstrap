@@ -1911,20 +1911,20 @@ body { padding-bottom: 70px; }
   <h3>Variações disponíveis</h3>
   <p>Adicione alguma das classes modificadoras mencionadas abaixo para mudar a aparência de um rótulo.</p>
   <div class="bs-example">
-    <span class="label label-default">Default</span>
-    <span class="label label-primary">Primary</span>
-    <span class="label label-success">Success</span>
+    <span class="label label-default">Padrão</span>
+    <span class="label label-primary">Primário</span>
+    <span class="label label-success">Sucesso</span>
     <span class="label label-info">Info</span>
-    <span class="label label-warning">Warning</span>
-    <span class="label label-danger">Danger</span>
+    <span class="label label-warning">Atenção</span>
+    <span class="label label-danger">Perigo</span>
   </div>
 {% highlight html %}
-<span class="label label-default">Default</span>
-<span class="label label-primary">Primary</span>
-<span class="label label-success">Success</span>
+<span class="label label-default">Padrão</span>
+<span class="label label-primary">Primário</span>
+<span class="label label-success">Sucesso</span>
 <span class="label label-info">Info</span>
-<span class="label label-warning">Warning</span>
-<span class="label label-danger">Danger</span>
+<span class="label label-warning">Atenção</span>
+<span class="label label-danger">Perigo</span>
 {% endhighlight %}
 </div>
 
@@ -1935,44 +1935,44 @@ body { padding-bottom: 70px; }
 <div class="bs-docs-section">
   <h1 id="badges" class="page-header">Badges</h1>
 
-  <p class="lead">Easily highlight new or unread items by adding a <code>&lt;span class="badge"&gt;</code> to links, Bootstrap navs, and more.</p>
+  <p class="lead">Dê destaque a itens novos ou não lidos adicionando um <code>&lt;span class="badge"&gt;</code> aos links, Bootstrap navs, e mais.</p>
 
   <div class="bs-example">
-    <a href="#">Inbox <span class="badge">42</span></a>
+    <a href="#">Caixa de Entrada <span class="badge">42</span></a>
   </div>
 {% highlight html %}
-<a href="#">Inbox <span class="badge">42</span></a>
+<a href="#">Caixa de Entrada <span class="badge">42</span></a>
 {% endhighlight %}
 
-  <h4>Self collapsing</h4>
-  <p>When there are no new or unread items, badges will simply collapse (via CSS's <code>:empty</code> selector) provided no content exists within.</p>
+  <h4>Auto esconder</h4>
+  <p>Quando não houver itens novos ou não lidos, os badges irão simplesmente desaparecer (via seletor CSS <code>:empty</code>).</p>
 
   <div class="bs-callout bs-callout-danger">
-    <h4>Cross-browser compatibility</h4>
-    <p>Badges won't self collapse in Internet Explorer 8 because it lacks support for the <code>:empty</code> selector.</p>
+    <h4>Compatibilidade entre navegadores</h4>
+    <p>Badges não irá auto esconder no Internet Explorer 8, porque ele não suporta o seletor <code>:empty</code>.</p>
   </div>
 
-  <h4>Adapts to active nav states</h4>
-  <p>Built-in styles are included for placing badges in active states in pill navigations.</p>
+  <h4>Adapta a navs com estado ativo</h4>
+  <p>Estilos de built-in estão incluídos para badges em estatos ativos de navegações pill.</p>
   <div class="bs-example">
     <ul class="nav nav-pills">
-      <li class="active"><a href="#">Home <span class="badge">42</span></a></li>
-      <li><a href="#">Profile</a></li>
-      <li><a href="#">Messages <span class="badge">3</span></a></li>
+      <li class="active"><a href="#">Início <span class="badge">42</span></a></li>
+      <li><a href="#">Perfil</a></li>
+      <li><a href="#">Mensagens <span class="badge">3</span></a></li>
     </ul>
     <br>
     <ul class="nav nav-pills nav-stacked" style="max-width: 260px;">
       <li class="active">
         <a href="#">
           <span class="badge pull-right">42</span>
-          Home
+          Início 
         </a>
       </li>
-      <li><a href="#">Profile</a></li>
+      <li><a href="#">Perfil</a></li>
       <li>
         <a href="#">
           <span class="badge pull-right">3</span>
-          Messages
+          Mensagens 
         </a>
       </li>
     </ul>
@@ -1986,7 +1986,7 @@ body { padding-bottom: 70px; }
   <li class="active">
     <a href="#">
       <span class="badge pull-right">42</span>
-      Home
+      Início 
     </a>
   </li>
   ...
@@ -2001,22 +2001,22 @@ body { padding-bottom: 70px; }
 <div class="bs-docs-section">
   <h1 id="jumbotron" class="page-header">Jumbotron</h1>
 
-  <p>A lightweight, flexible component that can optionally extend the entire viewport to showcase key content on your site.</p>
+  <p>Um componente leve e flexível que pode, opcionalmente, extender uma porta de visualização inteira para visualização de conteúdo chave no seu site.</p>
   <div class="bs-example">
     <div class="jumbotron">
-      <h1>Hello, world!</h1>
-      <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-      <p><a class="btn btn-primary btn-lg" role="button">Learn more</a></p>
+      <h1>Olá mundo!</h1>
+      <p>Esta é uma unidade simples, um compoente simples de estilo jumbotron para chamadas de atenção extra para conteúdo ou informação.</p>
+      <p><a class="btn btn-primary btn-lg" role="button">Leia mais</a></p>
     </div>
   </div>
 {% highlight html %}
 <div class="jumbotron">
-  <h1>Hello, world!</h1>
+  <h1>Olá mundo!</h1>
   <p>...</p>
-  <p><a class="btn btn-primary btn-lg" role="button">Learn more</a></p>
+  <p><a class="btn btn-primary btn-lg" role="button">Leia mais</a></p>
 </div>
 {% endhighlight %}
-  <p>To make the jumbotron full width, and without rounded corners, place it outside all <code>.container</code>s and instead add a <code>.container</code> within.</p>
+  <p>Para fazer o jumbotron com largura completa, e se cantos arredondados, coloque-o fora de todo <code>.container</code>s e a invés disso adicione o <code>.container</code> dentro.</p>
 {% highlight html %}
 <div class="jumbotron">
   <div class="container">
@@ -2031,17 +2031,17 @@ body { padding-bottom: 70px; }
 <!-- Page header
 ================================================== -->
 <div class="bs-docs-section">
-  <h1 id="page-header" class="page-header">Page header</h1>
+  <h1 id="page-header" class="page-header">Cabeçalho de página</h1>
 
-  <p>A simple shell for an <code>h1</code> to appropriately space out and segment sections of content on a page. It can utilize the <code>h1</code>'s default <code>small</code> element, as well as most other components (with additional styles).</p>
+  <p>Uma forma simples para configurar um <code>h1</code> para espaçamento e segmentação do conteúdo de uma página. Ele pode utilizar o elemento <code>small</code>padrão do <code>h1</code>, assim como a maioria dos outros componentes (com estilos adicionais).</p>
   <div class="bs-example">
     <div class="page-header">
-      <h1>Example page header <small>Subtext for header</small></h1>
+      <h1>Exemplo de cabeçalho de página <small>Subtexto para cabeçalho</small></h1>
     </div>
   </div>
 {% highlight html %}
 <div class="page-header">
-  <h1>Example page header <small>Subtext for header</small></h1>
+  <h1>Exemplo de cabeçalho de página <small>Subtexto para cabeçalho</small></h1>
 </div>
 {% endhighlight %}
 </div>
@@ -2053,10 +2053,10 @@ body { padding-bottom: 70px; }
 <div class="bs-docs-section">
   <h1 id="thumbnails" class="page-header">Thumbnails</h1>
 
-  <p class="lead">Extend Bootstrap's <a href="../css/#grid">grid system</a> with the thumbnail component to easily display grids of images, videos, text, and more.</p>
+  <p class="lead">Extende o <a href="../css/#grid">sistem de grid</a> do bootstrap com o componente thumbnail para facilmente mostrar grids de imagens, vídeos, texto e mais.</p>
 
-  <h3 id="thumbnails-default">Default example</h3>
-  <p>By default, Bootstrap's thumbnails are designed to showcase linked images with minimal required markup.</p>
+  <h3 id="thumbnails-default">Exemplo padrão</h3>
+  <p>Por padrão, os thumbnails do Bootstrap são desenhados para mostrar links de imagens com o mínimo de marcação requerida.</p>
   <div class="bs-example">
     <div class="row">
       <div class="col-xs-6 col-md-3">
@@ -2092,17 +2092,17 @@ body { padding-bottom: 70px; }
 </div>
 {% endhighlight %}
 
-  <h3 id="thumbnails-custom-content">Custom content</h3>
-  <p>With a bit of extra markup, it's possible to add any kind of HTML content like headings, paragraphs, or buttons into thumbnails.</p>
+  <h3 id="thumbnails-custom-content">Conteúdo customizado</h3>
+  <p>Com um pouco de extra marcação, é possível adicionar qualquer tipo de conteúdo HTML como cabeçalho, parágrafos ou botões nos thumbnails.</p>
   <div class="bs-example">
     <div class="row">
       <div class="col-sm-6 col-md-4">
         <div class="thumbnail">
           <img data-src="holder.js/300x200" alt="Generic placeholder thumbnail">
           <div class="caption">
-            <h3>Thumbnail label</h3>
+            <h3>Rótulo para Thumbnail</h3>
             <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-            <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+            <p><a href="#" class="btn btn-primary" role="button">Botão</a> <a href="#" class="btn btn-default" role="button">Botão</a></p>
           </div>
         </div>
       </div>
@@ -2110,9 +2110,9 @@ body { padding-bottom: 70px; }
         <div class="thumbnail">
           <img data-src="holder.js/300x200" alt="Generic placeholder thumbnail">
           <div class="caption">
-            <h3>Thumbnail label</h3>
+            <h3>Rótulo para Thumbnail</h3>
             <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-            <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+            <p><a href="#" class="btn btn-primary" role="button">Botão</a> <a href="#" class="btn btn-default" role="button">Botão</a></p>
           </div>
         </div>
       </div>
@@ -2120,9 +2120,9 @@ body { padding-bottom: 70px; }
         <div class="thumbnail">
           <img data-src="holder.js/300x200" alt="Generic placeholder thumbnail">
           <div class="caption">
-            <h3>Thumbnail label</h3>
+            <h3>Rótulo para Thumbnail</h3>
             <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-            <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+            <p><a href="#" class="btn btn-primary" role="button">Botão</a> <a href="#" class="btn btn-default" role="button">Botão</a></p>
           </div>
         </div>
       </div>
@@ -2134,9 +2134,9 @@ body { padding-bottom: 70px; }
     <div class="thumbnail">
       <img data-src="holder.js/300x200" alt="...">
       <div class="caption">
-        <h3>Thumbnail label</h3>
+            <h3>Rótulo para Thumbnail</h3>
         <p>...</p>
-        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+        <p><a href="#" class="btn btn-primary" role="button">Botão</a> <a href="#" class="btn btn-default" role="button">Botão</a></p>
       </div>
     </div>
   </div>
@@ -2149,30 +2149,29 @@ body { padding-bottom: 70px; }
 <!-- Alerts
 ================================================== -->
 <div class="bs-docs-section">
-  <h1 id="alerts" class="page-header">Alerts</h1>
+  <h1 id="alerts" class="page-header">Alertas</h1>
 
-  <p class="lead">Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages. For inline dismissal, use the <a href="../javascript/#alerts">alerts jQuery plugin</a>.</p>
-
-  <h2 id="alerts-examples">Examples</h2>
-  <p>Wrap any text and an optional dismiss button in <code>.alert</code> and one of the four contextual classes (e.g., <code>.alert-success</code>) for basic alert messages.</p>
+  <p class="lead">Fornecer mensagens de feedback contextuais para ações típicas de usuários com alertas de mensagens disponibilidades e flexíveis. Para ícone de fechar em linha, use o <a href="../javascript/#alerts">plugin de alertas jQuery</a>.</p>
+  <h2 id="alerts-examples">Exemplos</h2>
+  <p>Encapsule qualquer texto e um botão de fechar opcional em <code>.alert</code> e uma das quatro classes contextuais (e.x., <code>.alert-success</code>) para mensagens de alerta básicas.</p>
 
   <div class="bs-callout bs-callout-info">
-    <h4>No default class</h4>
-    <p>Alerts don't have default classes, only base and modifier classes. A default gray alert doesn't make too much sense, so you're required to specify a type via contextual class. Choose from success, info, warning, or danger.</p>
+    <h4>Classes não padrão</h4>
+    <p>Alertar não possuem classes padrão, somente classes base e modificadoras. O alerta cinza padrão não faz muito sentido, então se você está convidado a especificar um tipo de classe contextual. Escolha entre sucess, info, warning ou danger.</p>
   </div>
 
   <div class="bs-example">
     <div class="alert alert-success">
-      <strong>Well done!</strong> You successfully read this important alert message.
+      <strong>Muito bem!</strong> Você leu essa mensagem de alerta com sucesso.
     </div>
     <div class="alert alert-info">
-      <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+      <strong>Atenção!</strong> Esta mensagem precisa da sua atenção, mas não é super importante.
     </div>
     <div class="alert alert-warning">
-      <strong>Warning!</strong> Better check yourself, you're not looking too good.
+      <strong>Alerta!</strong> É melhor você olhar no espelho, você não está com uma aparência muito boa.
     </div>
     <div class="alert alert-danger">
-      <strong>Oh snap!</strong> Change a few things up and try submitting again.
+      <strong>Erro!</strong> Mude algumas coisas e tente submeter novamente.
     </div>
   </div>
 {% highlight html %}
@@ -2182,40 +2181,40 @@ body { padding-bottom: 70px; }
 <div class="alert alert-danger">...</div>
 {% endhighlight %}
 
-  <h2 id="alerts-dismissable">Dismissable alerts</h2>
-  <p>Build on any alert by adding an optional <code>.alert-dismissable</code> and close button.</p>
+  <h2 id="alerts-dismissable">Alertas removíveis </h2>
+  <p>Construa qualquer alerta, adicionando um opcional <code>.alert-dismissable</code> e um botão de fechar.</p>
   <div class="bs-example">
     <div class="alert alert-warning alert-dismissable">
       <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-      <strong>Warning!</strong> Better check yourself, you're not looking too good.
+      <strong>Alerta!</strong> É melhor você olhar no espelho, você não está com uma aparência muito boa.
     </div>
   </div>
 {% highlight html %}
 <div class="alert alert-warning alert-dismissable">
   <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-  <strong>Warning!</strong> Better check yourself, you're not looking too good.
+  <strong>Alerta!</strong> É melhor você olhar no espelho, você não está com uma aparência muito boa.
 </div>
 {% endhighlight %}
 
   <div class="bs-callout bs-callout-warning">
-    <h4>Ensure proper behavior across all devices</h4>
-    <p>Be sure to use the <code>&lt;button&gt;</code> element with the <code>data-dismiss="alert"</code> data attribute.</p>
+    <h4>Garantir comportamento apropriado entre dispositivos</h4>
+    <p>Certifique-se de usar o elemento <code>&lt;button&gt;</code> com o atributo data <code>data-dismiss="alert"</code>.</p>
   </div>
 
-  <h2 id="alerts-links">Links in alerts</h2>
-  <p>Use the <code>.alert-link</code> utility class to quickly provide matching colored links within any alert.</p>
+  <h2 id="alerts-links">Links em alertas</h2>
+  <p>Utilize a classe utilitária <code>.alert-link</code> para fornecer links com combinação de cores dentro de qualquer alerta.</p>
   <div class="bs-example">
     <div class="alert alert-success">
-      <strong>Well done!</strong> You successfully read <a href="#" class="alert-link">this important alert message</a>.
+      <strong>Muito bem!</strong> Você leu <a href="#" class="alert-link">esta importante mensagem de alerta</a>.
     </div>
     <div class="alert alert-info">
-      <strong>Heads up!</strong> This <a href="#" class="alert-link">alert needs your attention</a>, but it's not super important.
+      <strong>Atenção!</strong> Esta <a href="#" class="alert-link">mensagem precisa da sua atenção</a>, mas não é super importante.
     </div>
     <div class="alert alert-warning">
-      <strong>Warning!</strong> Better check yourself, you're <a href="#" class="alert-link">not looking too good</a>.
+      <strong>Alerta!</strong> É melhor você olhar no espelho, você não está <a href="#" class="alert-link">com uma aparência muito boa</a>.
     </div>
     <div class="alert alert-danger">
-      <strong>Oh snap!</strong> <a href="#" class="alert-link">Change a few things up</a> and try submitting again.
+      <strong>Erro!</strong> <a href="#" class="alert-link">Mude algumas coisas</a> e tente submeter novamente.
     </div>
   </div>
 {% highlight html %}
